@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				height: 40px;
+				width: 900px;
+				background-color:red;
+				margin: 100px auto;
+			}
+			.daohang{
+				list-style: none;
+			}
+			.daohang li{
+				float: left;
+				cursor: pointer;
+				width: 150px;
+				height: 40px;
+			}
+			.a{
+				height: 40px;
+				width: 150px;
+				line-height: 40px;
+				text-align: center;
+				position: relative;
+				transform-style: preserve-3d;
+				transition: all 4s;
+			}
+			.aa{
+				position: absolute;
+			}
+			.a span{
+				width: 150px;
+				height: 40px;
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+			}
+			.a span.aa{
+				background-color: blueviolet;
+				z-index: 1;
+				transform: translateZ(20px);
+			}
+			.a span.aaa{
+				background-color: chartreuse;
+				transform: rotateX(-90deg) translateZ(20px);
+			}
+			.daohang li:hover .a{
+				transform: rotateX(90deg);
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul class="daohang">
+				<li>
+					<div class="a">
+						<span class="aa">导航</span>
+						<span class="aaa">aaa</span>
+					</div>
+				</li>
+				<li>
+					<div class="a">
+						<span class="aa">导航</span>
+						<span class="aaa">aaa</span>
+					</div>
+				</li>
+				<li>
+					<div class="a">
+						<span class="aa">导航</span>
+						<span class="aaa">aaa</span>
+					</div>
+				</li>
+				<li>
+					<div class="a">
+						<span class="aa">导航</span>
+						<span class="aaa">aaa</span>
+					</div>
+				</li>
+				<li>
+					<div class="a">
+						<span class="aa">导航</span>
+						<span class="aaa">aaa</span>
+					</div>
+				</li>
+				<li>
+					<div class="a">
+						<span class="aa">导航</span>
+						<span class="aaa">aaa</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

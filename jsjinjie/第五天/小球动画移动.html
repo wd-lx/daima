@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>小球动画移动</title>
+		<style type="text/css">
+			#box {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background: skyblue;
+				position: absolute;
+				left: 50%;
+				top: 30%;
+			}
+			
+			;
+		</style>
+
+	</head>
+
+	<body>
+		<button id="btn">右边</button>
+		<button id="btn1">左边</button>
+		<button id="btn2">上边</button>
+		<button id="btn3">下边</button>
+		<div id="box"></div>
+
+		<script type="text/javascript">
+			var src = document.getElementById('box');
+			var speed = 2; //速度
+			var acr; //定时器编号
+
+			// 右边
+			document.getElementById('btn').onclick = function() {
+				// setInterval(move,20);
+				clearInterval(acr);
+				acr = setInterval(rtg, 20, speed);
+
+			}
+			// 左边
+			document.getElementById('btn1').onclick = function() {
+				// setInterval(move1,20);
+				clearInterval(acr);
+				acr = setInterval(rtg, 20, -speed);
+			}
+			// 上边
+			document.getElementById('btn2').onclick = function() {
+				// setInterval(move2,20);
+				clearInterval(acr);
+				acr = setInterval(rtg1, 20, speed);
+			}
+			// 下边
+			document.getElementById('btn3').onclick = function() {
+				// setInterval(move3,20);
+				clearInterval(acr);
+				acr = setInterval(rtg1, 20, -speed);
+			}
+
+			/* //向右移动
+     	 function move(){              
+            var l=window.getComputedStyle(src,null).left;
+              l=parseInt(l);
+            //修改右边距
+            src.style.left=l+speed+'px';
+     	 }
+     	 //向左移动
+     	 function move1(){              
+            var l=window.getComputedStyle(src,null).left;
+              l=parseInt(l);
+            //修改左边距
+            src.style.left=l-speed+'px';
+     	 }*/
+
+			function rtg(speed) {
+				var l = window.getComputedStyle(src, null).left;
+				l = parseInt(l);
+				//修改左边距
+				src.style.left = l + speed + 'px';
+
+			}
+
+			function rtg1(speed) {
+				var l = window.getComputedStyle(src, null).top;
+				l = parseInt(l);
+				//修改左边距
+				src.style.top = l + speed + 'px';
+
+			}
+
+			/*//向上移动
+     	 function move2(){              
+            var l=window.getComputedStyle(src,null).top;
+              l=parseInt(l);
+            //修改上边距
+            src.style.top=l-speed+'px';
+     	 }
+     	 //向下移动
+     	 function move3(){              
+            var l=window.getComputedStyle(src,null).top;
+              l=parseInt(l);
+            //修改下边距
+            src.style.top=l+speed+'px';
+     	 }
+*/
+		</script>
+
+	</body>
+
+</html>

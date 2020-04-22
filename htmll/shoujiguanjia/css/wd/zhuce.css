@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.uj{
+	width: 1500px;
+	height: 800px;
+	background-color: red;
+	margin: auto;
+}
+.zhuce{
+	height:800px;
+	width: 500px;
+	/*border: 1px solid red;*/
+	background-image: url(../../img/wd/zhuce/01-4.jpg);
+	background-repeat: no-repeat;
+	background-position-x: -250px;
+	background-position-y: -180px;
+	display: block;
+	float: left;
+	/*position: relative;*/
+}
+.zhuce1 {
+	height: 43px;
+	width: 102px;
+	margin-left: 18px;
+	/*border: #2771FA solid 1px;*/
+}
+.zhuce1 P{
+	font-size: 36px;
+	float: right;
+	margin-top: -5px;
+}
+.zhuceright{
+	width: 862px;
+	height:600px;
+	/*background-color: royalblue;*/
+	float: right;
+	/*margin-left: 330px;
+	margin-top: -600px;*/
+	
+	/*position: absolute;*/
+}
+.zhuceright-top{
+	height: 40px;
+	width: 600px;
+	margin-left:260px ;
+	/*border: 1px solid red;*/
+	/*float:left;*/
+	margin-top: 10px;
+}
+.zhuceright1{
+	border-radius: 5px;
+	padding: 0px 10px 0px 0px;
+	margin: 10px 260px 0px 0px;
+    height: 24px;
+    width: 90px;
+    background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;;
+    float: right;
+    text-align: right;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.zhuceright2{
+	height: 34px;
+	width: 23px;
+	/*border: 1px solid royalblue;*/
+	float: right;
+	/*position:absolute;*/
+	z-index: 1;
+	margin-right: -20px;
+}
+.box li{
+	height: 40px;
+	width: 100px;
+	/*background-color: whitesmoke;*/
+	color: #A9A9A9;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;
+	float: right;
+	list-style: none;
+	margin-right: 140px;
+	margin-top: -34px;
+}
+.box li a{
+	text-decoration: none;
+	color: #A9A9A9;
+}
+.box li a:hover{
+	color: black;
+}
+.box li:hover .box1{
+	display: block;
+}
+.box .img2{
+	width: 12px;
+	height: 8px;
+	background-repeat: no-repeat;
+	
+}
+/*.box .img3{
+	width: 12px;
+	height: 8px;
+	background-repeat: no-repeat;
+}*/
+.box li .img2:hover{
+/*	display: none;*/
+	
+}
+.box1{
+	width: 100px;
+	/*background-color: gray;*/
+	display: none;	
+}
+.box1 p{
+	width: 100px;
+	font-size: 14px;
+	color: #A9A9A9;
+	height: 40px;
+	/*border-bottom: 1px dashed wheat;*/
+	cursor: pointer;
+}
+.zhuzeright1{
+	float: right;
+	margin-right: -210px;
+	margin-top: -23px;
+	color: #A9A9A9;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 21px;
+}
+.zhuzeright1:hover{
+	color: black;
+}
+.banner1{
+	height: 62px;
+	width: 480px;
+	/*border:1px solid red;*/
+	margin: 50px auto;
+}
+.banner1 p{
+	font-size: 48px;
+	color: #000000;
+	/*margin: 0px 0px 0px 20px;*/
+}
+.bannertop{
+	height:700px;
+	width: 862px;
+	background-color: yellow;
+	margin: auto;
+	
+}
+.banner2{
+	height: 33px;
+	width: 480px;
+	/*border:1px solid red;*/
+	margin: 30px auto;
+}
+.banner2 p{
+	font-size: 28px;
+	color: #000000;
+	/*margin: 0px 0px 0px 20px;*/
+}
+.banner2 .banner2-1{
+float: right;
+margin-top: -35px;
+font-size: 24px;
+color:#359eff;
+cursor: pointer;
+}
+.banner2 .banner2-1:hover{
+	color: #2b72ff;
+}
+.nicheng{
+	width: 459px;
+	height: 51px;
+	border: 1px solid black;
+	padding: 0px 20px;
+	margin-left: 187px;
+	outline: none;
+	border-radius: 5px;
+}
+.nicheng1{
+	margin-left: 187px;
+	font-size: 12px;
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.dianhua{
+	width: 133px;
+	height: 51px;
+	border-radius: 7px;
+	border: 1px solid black;
+	margin-left: 187px;
+	padding: 0px 20px;
+	outline: none;
+}
+.haoma{
+	width: 260px;
+	height: 51px;
+	border-radius: 7px;
+	border: 1px solid black;
+	margin-left: 20px;
+	padding: 0px 20px;
+	outline: none;
+}
+.tijiao{
+	width:500px;
+	height: 51px;
+    background: #5B9CE8;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-left:188px;
+    margin-top: 40px;
+    border: 1px solid #5B9CE8;
+    outline: none;
+}
+.duanyuan{
+	height: 15px;
+	width: 15px;
+	float: left;
+	margin-left: 100px;
+}
+.fu{
+	height:20px; 
+	width:15px; 
+	float:left;
+	/*background-color: red;*/
+	margin-left: 205px;
+	margin-top: 18px;
+}
+.zi{
+	height:50px; 
+	width:300px; 
+	float:left; 
+	margin-top:20px; 
+	font-size:12px;
+	margin-left: 5px;
+}
+.bottom{
+	height: 20px;
+	width: 862px;
+	/*background-color: red;*/
+}
+.bottom .bottom1{
+	font-size: 12px;
+	height: 20px;
+	width: 862px;
+	float:left;
+	text-align: center;
+	line-height: 20px;
+	margin-top: -80px;
+	color: gray;
+}
+

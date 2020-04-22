@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 200px;
+				background-color: yellow;
+				padding: 10px 20px 30px;
+				border: 10px solid red;
+				background: url(../img/06.jpg) no-repeat 10px 10px;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+			你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+			你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+		</div>
+		<script type="text/javascript">
+			var oDiv = document.getElementsByTagName("div")[0];
+			alert(window.getComputedStyle(oDiv).getPropertyCSSValue("width"));
+			alert(oDiv.currentStyle.width);
+		</script>
+	</body>
+</html>

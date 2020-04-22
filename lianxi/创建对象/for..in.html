@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*	var obj = {
+				uname:"pink老师",
+				age:18,
+				sex:"男"
+			}
+              //console.log(obj.uname);
+            for(var k in obj){
+            	console.log(k);   //属性名
+            	console.log(obj[k]);  //属性值
+            }*/
+          /* var diannao = new Object();
+           diannao .uname = "电脑";
+           diannao.color = "灰色";
+           diannao.height = 19;
+          for (var k in diannao){
+          	console.log(k);
+          	console.log(diannao[k]);
+          }*/
+         function Button(height,width){
+         	this.height = height;
+         	this.width = width;
+         }
+         var a = new Button(100,200);
+         /*console.log(a.height);
+         console.log(a.width);*/
+         for(var k in new Button){
+         	console.log(k);
+//       	console.log(new Button[k]);
+         }
+		</script>
+	</body>
+</html>

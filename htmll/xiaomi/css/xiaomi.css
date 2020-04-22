@@ -1,0 +1,119 @@
+*{ 
+	padding:0; 
+	margin: 0;
+	}
+.topmenu{
+    display:block;
+    background-color: #995561;
+    width:210px;
+    z-index:3;
+    font-size:16px; 
+	line-height:1.8;
+}
+ .topmenu li{
+    list-style-type:none;
+    /*text-indent:0px;
+    background-repeat:no-repeat;
+    background-position:right;*/
+     }
+ .topmenu li>a{
+     /*text-indent:10px;*/
+     color: white;
+     text-decoration:none; 
+ }
+    .topmenu li:hover
+    {
+        background-color: orangered;
+    }
+
+    .topmenu li:hover span {
+    background-color: white;
+   /* display: inline-block;*/
+    float: right;
+    height: 30px;
+    position: relative;
+    /*width: 20px;
+    z-index: 20;*/
+}
+     .submenu{
+        background-color:#FFF;
+        display:none;
+        border: 1px solid #DDD;
+        box-shadow:0 0 5px #DDD;
+        width:715px;
+        left:210px;
+        position:absolute;
+        /*top:40px;*/
+        border:1px solid #ddd;
+    }
+
+    .leftdiv{
+        float:left;
+        width:490px;
+        margin:5px;
+    }
+    .rightdiv{
+
+        float:right;
+        width:200px;
+        margin:5px;
+    }
+.topmenu li:hover  .submenu
+        {
+            display: block;
+        }
+.leftdiv dl
+{
+    display:block;
+    border-bottom:solid  #CCC 1px;
+    padding-bottom:6px;
+    overflow:hidden;
+}
+.leftdiv dl dt
+{
+    display:block;
+    float:left;
+    width:80px;
+    text-align:right;
+    height:22px;
+    padding-right:6px;
+
+}
+.leftdiv dl dt a
+{
+    color:#B1191A;
+
+
+}
+.leftdiv dl dd
+{
+    display:block;
+    overflow:hidden;
+}
+.leftdiv dl dd a
+{
+
+    float:left;
+    text-align:center;
+    text-decoration:none;
+    line-height:22px;
+    color:#666;
+    padding:2px 8px;
+    margin:4px 0;
+    border-left:solid #ccc 1px;
+}
+
+  .leftdiv dl dd a:hover{
+      color:#B1191A;
+
+  }
+  .rightdiv{
+      display:block;
+      float:right;
+      line-height:8px; 
+       color: #666;
+  }
+  .rightdiv dl dt{
+      color:red;
+      font-weight:bold;
+  }

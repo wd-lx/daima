@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//return 表达式;
+			/*function sum(x,y){
+				var a=x+y;
+				return a;
+			}
+			alert(sum(2,3));*/
+			
+			
+			//函数的返回值也可以直接赋给变量活用于表达式中
+			/*function sum(x,y){
+				var a=x+y;
+				return a;
+			}
+			var b=sum(2,3);
+			alert(b);*/
+			
+			//返回值的应用      通过函数的返回值比较俩个数的大小
+			function a(x,y){
+				if(x>y){
+			        return true;
+				}else{
+					return false;
+				}
+			}
+			var b=a(20,20);
+			if(b){
+				alert("第一个数大于第二个数");
+			}else{
+				alert("第一个数小于第二个数");
+			}
+		</script>
+	</body>
+</html>

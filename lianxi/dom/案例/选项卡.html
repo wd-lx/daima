@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				height: 50px;
+				width: 700px;
+				margin:auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			ul li{
+				height: 50px;
+				width: 110px;
+				line-height: 50px;
+				text-align: center;
+				color: white;
+				background-color: yellow;
+				cursor: pointer;
+				border-radius: 6px;
+				list-style: none;
+			}
+			.box{
+				height: 500px;
+				width: 700px;
+				margin: auto;
+			}
+			.item{
+				height: 500px;
+				width: 700px;
+				border: 1px solid red;
+				background-color: rosybrown;
+				display: none;
+				font-size: 36px;
+				text-align: center;
+				line-height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>选项卡1</li>
+			<li>选项卡2</li>
+			<li>选项卡3</li>
+			<li>选项卡4</li>
+			<li>选项卡5</li>
+			<li>选项卡6</li>
+		</ul>
+		<div class="box" id="box">
+			<div class="item" style="display: block;">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+		</div>
+		<script type="text/javascript">
+			var a = document.getElementsByTagName("li");
+			var b = document.getElementsByClassName("item");
+			//方法一：let
+/*			for (let i=0;i<a.length;i++) {
+				a[i].onclick=function(){
+					for (var j=0;j<b.length;j++) {
+						b[j].style.display="none";
+					}
+					b[i].style.display="block";
+				}
+			}*/
+			//方法二：编号
+			for(var i=0;i<a.length;i++){
+				a[i].index=i;
+				a[i].onmousemove=function(){
+					for(var v =0;v<a.length;v++){
+						a[v].style.backgroundColor = "yellow";
+					}
+					for(var j=0;j<b.length;j++){
+						b[j].style.display="none";
+					}
+					this.style.backgroundColor="blue";
+					b[this.index].style.display="block";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				border: 2px solid red; 
+				padding: 20px;
+				*zoom: 1;
+			}
+			.nav{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				float: left;
+			}
+			.nav1{
+				width: 100px;
+				height: 200px;
+				background-color: aqua;
+				float: left;
+			}
+			.content{
+				width: 200px;
+				height: 200px;
+				background-color: gold;
+			}
+			.box::after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.box::after,.box::before{
+				content: '';
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="nav"></div>
+			<div class="nav1"></div>
+			<div class="nav2"></div>
+			<div class="nav3"></div>
+		</div>
+		<div class="content"></div>
+	</body>
+</html>

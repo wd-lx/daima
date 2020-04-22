@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box" style="width: 200px; height: 200px; background-color: red;"></div>
+		<script type="text/javascript">
+			var oBox = document.getElementById("box");
+			//信号量
+			var state = 0;//0表示红色  1表示蓝色
+			oBox.onclick=function(){
+				if(state=="red"){
+					state = "blue";
+				}else{
+					state = "red";
+				}
+				this.style.backgroundColor = state;
+			}
+		</script>
+	</body>
+</html>

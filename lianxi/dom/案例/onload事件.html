@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--<script type="text/javascript">
+			var oBox = document.getElementById("box");
+			oBox.onmousemove = function(){
+				this.style.fontSize = "24px";
+			}
+		</script>
+		<div id="box">123</div>  控制台会报错-->
+		<script type="text/javascript">
+			//onload  页面的代码全部加载完成
+			window.onload = function() {
+				var oBox = document.getElementById("box");
+				oBox.onmousemove = function() {
+					this.style.fontSize = "24px";
+				}
+				oBox.onmouseout = function(){
+					this.style.fontSize = "12px";
+				}
+			}
+		</script>
+		<div id="box" style="font-size: 18px;">123</div>
+	</body>
+
+</html>

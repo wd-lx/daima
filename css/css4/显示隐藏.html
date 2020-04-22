@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				visibility: hidden;
+			}
+			.box:hover{
+				/*display: block;*/
+				/*display: none;*//*不占位置*/
+				visibility: hidden;/*隐藏并且占位*/
+				/*visibility: visible;*/
+			}
+			.box1{
+				width: 0px;
+				height: 0px;
+				/*background-color: yellowgreen;*/
+				border-top: 20px solid transparent;
+				border-right: 20px solid blue;
+				border-bottom: 20px solid transparent;
+				border-left: 20px solid transparent;
+				/*border: 20px solid white;*/
+				/*border-width: 20px;
+				border-style: solid ;  */
+				/*border-color: red green blue aqua;*/ 
+				/*border-top-color: red;
+				border-right-color: green;
+				border-bottom-color: blue;
+				border-left-color: aqua;*/
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box1"></div>
+	</body>
+</html>

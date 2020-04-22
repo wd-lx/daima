@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 700px;
+				overflow: hidden;
+				margin: 50px auto;
+			}
+			img{
+				height: 400px;
+				width: 700px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img src="../img/01.jpg" id="tu">
+			<input type="button" value="上一张" id="btn1" />
+			<input type="button" value="下一张" id="btn2"/>
+		</div>
+		<script type="text/javascript">
+			var oTu = document.getElementById("tu");
+			var btn1 = document.getElementById("btn1");
+			var btn2 = document.getElementById("btn2");
+			var index = 1;
+			function autoImg(){
+				index++;
+				if(index>=6){
+					index = 1;
+				}
+				oTu.src = "../img/0"+index+".jpg";
+			}
+			btn2.onclick = autoImg;
+			btn1.onclick = function(){
+				index--;
+				if(index<1){
+					index= 5;
+				}
+				oTu.src = "../img/0"+index+".jpg";
+			}
+			setInterval(autoImg,1000);7
+		</script>
+	</body>
+</html>

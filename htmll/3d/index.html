@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				height:200px;
+				width: 331px;
+				border: 1px solid red;
+				margin: 20px auto;
+			}
+			.zuhe{
+				height:200px;
+				width: 331px;
+				border: 1px solid red;
+				position: relative;
+				transform-style: preserve-3d;
+				transition: all 5s;
+			}
+			.zuhe img{
+				height:200px;
+				width: 331px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.zuhe img.tu4{
+				z-index: 1;
+				transform: translateZ(100px);
+			}
+			.zuhe img.tu5{
+				transform: rotateX(90deg) translateZ(100px);
+			}
+			.box:hover .zuhe{
+				transform: rotateX(-90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="zuhe">
+			<img src="img/tu4.jpg" class="tu4">
+			<img src="img/tu5.jpg" class="tu5">
+			</div>
+		</div>
+	</body>
+</html>

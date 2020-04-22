@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.top{
+	height: 58px;
+	width: 100%;
+	background: #191D3A;
+}
+.top1{
+	height: 58px;
+	width: 1000px;
+	/*background-color: red;*/
+	margin: auto;
+}
+.top1 img{
+	width: 157px;
+	height: 36px;
+	margin-top: 11px;
+	float: left;
+}
+.top2{
+	float: left;  
+	list-style: none;
+	/*margin-left: 40px;*/
+}
+.top2 li{
+	float: left;
+	width: 87px;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #bbb;
+}
+.top2 li a{
+	text-decoration: none;
+	color: #bbb;
+}
+.top2 li a:hover{
+	color: white;
+}
+.top2 li:hover{
+	color: white;
+}
+.top2 li.top2-1{
+	color: white;
+	background-color:  #252947;
+}
+.top2 li.top2-2{
+	width: 100px;
+	height: 34px;
+	background-color: #38B774;
+	color: white;
+	margin-top: 12px;
+	border-radius: 5px;
+	line-height: 34px;
+	margin-left: 10px;
+}
+.top3{
+	float: right;
+	width: 80px;
+	height: 58px;
+    /*background-color: red;*/
+	line-height: 58px;
+	text-align: center;
+	font-size: 14px;
+}
+.top3-1{
+	float: left;
+	color:#38B774;
+	font-size: 14px;
+	cursor: pointer;
+}
+.top3-2{
+	color:#A9A9A9;
+	font-size: 14px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.top3-2:hover{
+	color: #38B774;;
+}
+.banner{
+	width: height:460px;
+	width: 100%;
+}
+.banner img{
+	width: height:460px;
+	width: 100%;
+}
+.p{
+	height: 1000px;
+	width: 100%;
+	/*background-color: yellow;*/
+}
+.p1{
+	height: 1000px;
+	width: 1000px;
+	/*background-color: yellow;*/
+	margin: auto;
+}
+.boyayouxi{
+	height: 40px;
+	width: 1000px;
+	/*background-color: red;*/
+	line-height: 40px;
+}
+.boyayouxi-1{
+	float: right;
+	font-size: 12px;
+}
+.boyayouxi-2{
+	font-size: 18px;
+	font-weight: bold;
+}
+.shouji{
+	height: 400px;
+	width: 200px;
+	/*background: greenyellow;*/
+	float: left;
+}
+.shouji1{
+	height: 70px;
+	width: 200px;
+	/*background: firebrick;*/
+	margin-top: 10px;
+	/*float: left;*/
+	cursor: pointer;
+}
+.shouji1 span{
+	margin-left: 70px;
+	line-height: 70px;
+	color: black;
+}
+.shouji1 span.shouji1-1{
+	color: green;
+	
+}
+.shouji1 span:hover{
+	color: green;
+}
+.right{
+	width:760px ;
+	height: 950px;
+	/*background-color: royalblue;*/
+	/*margin-top: 40px;*/
+	margin-left: 240px;
+}
+.img{
+	width: 350px;
+	height:300px;
+	background-color:#F7F7F7;
+	cursor:pointer;
+	border: 1px solid darkgrey;
+	margin-top: 10px;
+	float: left;
+	margin-left: 20px;
+}
+.img:hover{
+	background-color: white;
+}
+.img1{
+	/*background-color: salmon;*/
+	height: 40px;
+	width: 350px;
+}
+.img1 span{
+	line-height: 40px;
+	
+}
+.img1-1{
+	color: green;
+	font-size: 12px;
+
+}
+.img1-2{
+	margin-left: 100px;
+}
+.img1 span:hover
+{
+	color: green;
+}
+.img2{
+	height: 200px;
+	width: 350px;
+	/*background-color: darkgray;*/
+}
+.img2 img{
+	height: 180px;
+	width: 330px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.img3{
+	height: 50px;
+	width: 350px;
+	/*background-color: red;*/
+	margin-top: 10px;
+	line-height: 50px;
+}
+.img3-1{
+	margin-left: 70px;
+}
+.img3-2{
+	margin-left: 20px;
+}
+.img3-1:hover{
+	color: green;
+}
+.img3-2:hover{
+	color: green;
+}
+.botoom{
+	height: 200px;
+	width: 100%;
+	background-color: #191D3A;
+	margin-top: 20px;
+}
+.bt1{
+	height: 60px;
+	width: 1200px;
+	/*background-color: red;*/
+	margin:  auto;
+}
+.bt1 span{
+	font-size: 12px;
+	text-align: center;
+	line-height: 60px;
+	margin-left: 50px;
+	color: darkgray;
+	cursor: pointer;
+}
+.bt1 span:hover{
+	color: white;
+}
+.bt2{
+	height: 60px;
+	width: 1200px;
+	/*background-color: yellow;*/
+	margin: auto;
+}
+.bt2 span{
+	      font-size: 12px;
+	      text-align: center;
+	      line-height: 60px;
+	      margin-left: 50px;
+	      color: darkgray;
+}
+.bt2 span.bt2-1{
+	font-size: 12px;
+	text-align: center;
+	line-height: 60px;
+	color: darkgray;
+	cursor: pointer;
+	margin-left: 0px;
+}
+.bt2 span.bt2-1:hover{
+	color: white;
+}
+*/

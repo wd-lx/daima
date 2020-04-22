@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 700px;
+				overflow: hidden;
+				margin: 50px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+		<img src="../../img/03.jpg" style="width: 700px; height: 400px;" id="tu">
+		</div>
+		<script type="text/javascript">
+			var oTu = document.getElementById("tu");
+			var index = 1;
+			function autoImg(){
+				index++;
+				if(index>=6){
+					index = 1;
+				}
+				oTu.src = "../../img/0"+index+".jpg";
+			}
+			setInterval(autoImg,1000);
+		</script>
+	</body>
+</html>

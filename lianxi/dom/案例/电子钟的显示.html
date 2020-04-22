@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<div id="clock"></div>
+		<script type="text/javascript">
+			(function(){
+				var divClock = document.getElementById("clock"); 
+				function formatTime(num){
+					return (num>=10?"":"0")+num;
+				}
+				function showTime(){
+					var date  = new Date();
+					console.log(date);
+					divClock.innerHTML = formatTime(date.getHours())+":"+formatTime(date.getMinutes())+":"+formatTime(date.getSeconds());
+				}
+				setInterval(showTime,1000);
+			}())
+		</script>-->
+		<div id="clock"></div>
+		<script type="text/javascript">
+			(function(){
+				var divClock = document.getElementById("clock");
+				function formatTime(num){
+					return (num>=10?"":"0")+num;
+				}
+				function showTime(){
+					var date = new Date();
+					console.log(date);
+					divClock.innerHTML = formatTime(date.getHours())+":"+formatTime(date.getMinutes())+":"+formatTime(date.getSeconds());
+				}
+				setInterval(showTime,1000);
+			})()
+		</script>
+	</body>
+</html>

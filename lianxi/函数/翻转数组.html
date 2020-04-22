@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function rev(arr){
+				var newArr = [];
+				for(var i = arr.length-1;i>=0;i--){
+					newArr[newArr.length]=arr[i];
+				}
+				return newArr;
+			}
+			console.log(rev([1,2,3,4]));
+			console.log(rev(["st","er","yu"]));
+		</script>
+	</body>
+</html>

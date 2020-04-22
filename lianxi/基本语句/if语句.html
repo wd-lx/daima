@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*var age = 23;
+			if(age<18){
+				alert("你还没有成年");
+			}else{
+				alert("恭喜你，成年了！");
+			}*/
+		/*	var age = prompt("请输入你的年龄");
+			if(age<18){
+				alert("你还没有成年");
+			}else if(age>=18&&age<60){
+				alert("你可以进入");
+			}else{
+				alert("你超出年龄限制");
+			}*/
+			//if语句的嵌套
+			//假设某工厂的男职工60岁退休，女职工55岁退休
+			var sex = prompt("请输入你的性别");
+			var age = prompt("请输入你的年龄");
+			if(sex=="男"){
+				if(age>=60){
+					alert("您已经退休了！");
+				}else{
+					alert("恭喜男职工还没有退休");
+				}
+			}else{
+				if(age>=55){
+					alert("您已经退休了");
+				}else{
+					alert("恭喜女职工还没有退休");
+				}
+			}
+		</script>
+	</body>
+</html>

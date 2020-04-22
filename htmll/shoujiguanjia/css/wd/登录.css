@@ -1,0 +1,267 @@
+.hei{
+	height: 100%;
+				width: 100%;
+				background-color: black;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0.6;
+}
+.hei1{
+	            width: 700px;
+				height: 380px;
+				/*background-color: gold;*/
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -200px;
+				margin-left: -350px;
+
+}
+.green{
+	width: 700px;
+	height: 50px;
+	float: left;
+	background-color: #00BFFF;
+}
+.logo{
+	width: 40px;
+	height: 40px;
+	float: left;
+	background-image: url(../../img/武绍泽/header.png);
+	background-repeat: no-repeat;
+	margin-left: 20px;
+}
+.green h3{
+	width: 80px;
+	height: 40px;
+	color: ghostwhite;
+	/*background-color: palegreen;*/
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 5px;
+	font-weight: 400;
+	font-size: 18px;
+}
+.qq{
+	width: 200px;
+	height: 20px;
+	float: right;
+	/*background-color: red;*/
+	margin-top: 15px;
+	color: white;
+	font-size: 12px;
+}
+.qq a{
+	font-size:12px;
+}
+.qq a:nth-child(1){
+	cursor: pointer;
+}
+.qq a:nth-child(2){
+	cursor: pointer;
+}
+.qq a:nth-child(3){
+	cursor: pointer;
+}
+.qq a:nth-child(1):hover{
+	color: gainsboro;
+}
+.qq a:nth-child(2):hover{
+	color: gainsboro;
+}
+.qq a:nth-child(3):hover{
+	color: gainsboro;
+}
+.green span{
+	cursor: pointer;
+	margin-left: 542px;
+	font-size: 20px;
+	margin-top: 0px;
+	position: absolute;
+	color: grey;
+}]
+.green span:hover{
+	color: red;
+}
+.an{
+	height: 330px;
+	width: 400px;
+	float: left;
+	border-right: 1px solid gainsboro;
+	background-color: white;
+}
+.as{
+	height: 330px;
+	width: 299px;
+	float: left;
+	background-color: white;
+}
+.an1{
+	width: 350px;
+	height: 28px;
+	margin:  20px auto;
+	/*background-color: darkgoldenrod;*/
+	line-height: 28px;
+	text-align: center;
+	font-size: 18px;
+}
+.an2{
+	width:350px ;
+	height: 22px;
+	/*background-color: mediumaquamarine;*/
+	font-size: 14px;
+	text-align: center;
+	line-height: 22px;
+	margin: auto;
+	color: gray;
+}
+.an2 a{
+	color: #00BFFF;
+	cursor: pointer;
+}
+.an2 a:hover{
+	text-decoration: underline;
+}
+.in{
+	width: 350px;
+	height: 35px;
+	/*background-color: red;*/
+	margin: 30px auto;
+}
+.er{
+	width: 200px;
+	height: 30px;
+	margin: auto;
+	border-radius: 2px;
+	outline: none;
+	margin-left: 75px;
+}
+.in1{
+	width: 350px;
+	height: 35px;
+	/*background-color: red;*/
+	margin: -15px auto;
+}
+.er1{
+	width: 200px;
+	height: 30px;
+	margin: auto;
+	border-radius: 2px;
+	outline: none;
+	margin-left: 75px;
+}
+.in2{
+	width: 350px;
+	height: 35px;
+	/*background-color: red;*/
+	margin: 30px auto;
+}
+.ez{
+	width: 200px;
+	height: 35px;
+	margin: auto;
+	border-radius: 2px;
+	outline: none;
+	margin-left: 75px;
+	background-color: #86CE2F;
+	line-height: 35px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+.but{
+	width: 350px;
+	height: 20px;
+	margin: 40px auto;
+	/*background-color: rosybrown;*/
+	font-size: 12px;
+	line-height: 20px;
+	text-align: right;
+	color: gray;
+}
+.but a {
+	cursor: pointer;
+}
+.but a:nth-child(1):hover{
+	text-decoration: underline;
+}
+.but a:nth-child(2):hover{
+	text-decoration: underline;
+}
+.but a:nth-child(3):hover{
+	text-decoration: underline;
+}
+.yeawwl{
+	width: 250px;
+	height: 40px;
+	/*background-color: red;*/
+	margin-left: 49px;
+	margin-top: 20px;
+	border-top: 1px dashed gainsboro;
+	border-bottom: 1px dashed gainsboro;
+	line-height: 40px;
+	font-size: 12px;
+}
+.yeawwl a{
+	color: deepskyblue;
+	cursor: pointer;
+}
+.yeawwl a:hover{
+	text-decoration: underline;
+}
+.yeawwl2{
+	width: 250px;
+	height: 40px;
+	/*background-color: red;*/
+	margin-left: 49px;
+	position: relative;
+	cursor: pointer;
+	border-bottom: 1px dashed gainsboro;
+	line-height: 40px;
+	font-size: 12px;
+}
+.yeawwl2 .per{
+	margin-top: 15px;
+	position: absolute;
+}
+.yeawwl2 span{
+	margin-left: 20px;
+}
+.boss{
+	width: 250px;
+	height: 40px;
+	/*background-color: red;*/
+	margin-left: 49px;
+	position: relative;
+	cursor: pointer;
+	
+	line-height: 40px;
+	font-size: 12px;
+}
+.boss .ios{
+	margin-top: 15px;
+	position: absolute;
+}
+.boss span{
+	margin-left: 20px;
+}
+.boss1{
+	width: 250px;
+	height: 40px;
+	/*background-color: red;*/
+	margin-left: 50px;
+	position: relative;
+	cursor: pointer;
+	margin-top: 20px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.boss1 a{
+	color: #00BFFF;
+	cursor: pointer;
+}
+.boss1 a:hover{
+	text-decoration: underline;
+}

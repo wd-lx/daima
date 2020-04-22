@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//求数组中的最大值
+/*			function max(arr){
+				var max = 0;
+				for(var i = 0; i<arr.length;i++){
+					if(arr[i]>max){
+						max = arr[i];
+					}
+				}
+				return max;
+			}
+			var re = max([1,5,6,9,10]);
+			console.log(re);*/
+			//求数组中的最小值
+			/*function min(arr){
+				var min = 0;
+				for(var i=0;i<arr.length;i++){
+					if(arr[i]<min){
+						min = arr[i];
+					}
+				}
+				return min;
+			}
+			var re = min([1,2,90,9,39,0]);
+			console.log(re);*/
+			//函数没有return 返回undefined
+			/*function rev(num1,num2){
+				
+			}
+			console.log(rev(1,12));   //undefined*/
+			//arguments使用
+			function max(){
+				var max = arguments[0];
+				for(var i = 1;i<arguments.length;i++){
+					if(arguments[i]>max){
+						max = arguments[i];
+					}
+				}
+				return max;
+			}
+			console.log(max(1,2));
+			console.log(max(1,2,22,33,44,99));
+		</script>
+	</body>
+</html>

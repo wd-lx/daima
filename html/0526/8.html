@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.content{
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				/*overflow: hidden;*/
+				margin: 20px auto;
+				background-image:url(img/dm.jpg);
+			}
+			.user{
+				width: 100px;
+				height: 100px;
+				/*border: 2px solid red;*/
+				margin-left: 117px;
+    			margin-top: 74px;
+    			text-align: center;
+    			line-height: 100px;
+    			font-size: 30px;
+    			font-weight: 800;
+    			color: #F7D4D2;
+			}
+			.btn{
+			  	width: 100px;
+			  	height: 50px;
+			  	font-size: 20px;
+			  	font-family: "宋体";
+			  	color: black;
+			  	margin-left: 62px;
+			  	margin-top: 66px;	
+			}
+			.names{
+				width: 250px;
+				height: 200px;
+				/*border: 2px solid red;*/
+				margin-left: 183px;
+   				 margin-top: -45px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="user">武绍泽</div>
+			<button class="btn">点名开始</button>
+			<div class="names">
+				已经点过：
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var user = document.getElementsByClassName("user")[0];
+		var btn = document.getElementsByClassName("btn")[0];
+		var names = document.getElementsByClassName("names")[0];
+		var students= ["武绍泽","刘博闻","杨森","王丹","李胜","王旭","常意","史欢","李娟","牛强","全媛媛",
+		"金岩弘","刘亿鑫","付晴晴","齐争争","于园皓","赵笔笔","马海洋"];
+		var x = 0;
+		btn.onclick = function(){
+				
+
+		
+			if(x<students.length){
+				user.innerText = students[x];
+				names.innerText = names.innerText + user.innerText;
+				
+			}else{
+				alert("点名结束");
+				user.innerText = "结束";
+				btn.innerText = "结束";
+			}
+			x = x+1;
+		
+		}
+		
+	</script>
+</html>

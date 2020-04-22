@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#content{
+				text-align: center;
+				margin: 0 auto;
+			}
+			#btn{
+				padding: 20px;
+				margin-left: 600px;
+			}
+		</style>
+	</head>
+	<body>
+        <input type="button" name="" id="btn" value="下一个" />
+        <div id="content">
+        	
+        </div>
+	</body>
+	<script type="text/javascript">
+        var btn = document.getElementById("btn");
+        var content = document.getElementById("content");
+        content.style.width = "500px";
+        content.style.height = "400px";
+        content.style.fontSize = "50px";
+        content.style.backgroundColor = "greenyellow";
+        var names = ["畅玉蓉","吴晓艳","马超瑾","雷娟花","马晶星","张玥玥","高明月"];
+	    var x=0;
+	    
+	    
+        btn.onclick = function(){
+        	content.innerText = names[x];
+        	x=x+1;
+        	if(x>7){
+        		alert("点名结束");
+        		content.innerText ="点名结束";
+        	}
+        }
+	</script>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				width: 650px;
+				height: 350px;
+				margin: 50px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.box ul {
+				list-style: none;
+			}
+			
+			.box ul li {
+				display: none;
+			}
+			
+			.box ul li img {
+				width: 650px;
+				height: 350px;
+			}
+			
+			.box ul li.current {
+				display: block;
+			}
+			
+			.box span {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: 150px;
+				cursor: pointer;
+				background-color: yellow;
+			}
+			
+			.left {
+				left: 10px;
+			}
+			
+			.right {
+				right: 10px;
+			}
+			
+			.yuan {
+				position: absolute;
+				bottom: 10px;
+				width: 200px;
+				height: 20px;
+				left: 50%;
+				margin-left: -50px;
+			}
+			
+			.yuan ol {
+				list-style: none;
+			}
+			
+			.yuan ol li {
+				width: 20px;
+				height: 20px;
+				background-color: gold;
+				border-radius: 50%;
+				cursor: pointer;
+				margin-right: 10px;
+				float: left;
+			}
+			
+			.yuan ol li.current {
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="img-list" id="img-list">
+				<ul>
+					<li class="current">
+						<a href=""><img src="../img/01.jpg">
+					</li>
+					</a>
+					<li>
+						<a href=""><img src="../img/02.jpg">
+					</li>
+					</a>
+					<li>
+						<a href=""><img src="../img/03.jpg">
+					</li>
+					</a>
+					<li>
+						<a href=""><img src="../img/04.jpg">
+					</li>
+					</a>
+					<li>
+						<a href=""><img src="../img/05.jpg">
+					</li>
+					</a>
+				</ul>
+			</div>
+			<div class="btn">
+				<span id="left" class="left"></span>
+				<span id="right" class="right"></span>
+			</div>
+			<div class="yuan" id="yuan">
+				<ol>
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+		<script type="text/javascript">
+			///得到所有的元素，左右按钮 每个小圆点  每个图片里面的li
+			var oLeft = document.getElementById("left");
+			var oRight = document.getElementById("right");
+			var  oYuan = document.getElementById("yuan").getElementsByTagName("li");
+			var oTu = document.getElementById("img-list").getElementsByTagName("li");
+			var index = 0;  //设置信号量
+			//左按钮监听
+			oLeft.onclick = function(){
+				index--
+				if(index<0){
+					index = 3;
+				}
+				changePic();
+	}
+			//右按钮监听
+			
+			oRight.onclick=function(){
+				index++;
+				if (index>3) {
+					index=0;
+				}
+				changePic();
+			}
+			//圆点监听要批量添加
+			for(var i=0;i<oYuan.length;i++){
+				(function(m){
+					oYuan[m].onmouseover=function(){
+						index=m;
+						changePic();
+					}
+				})(i);
+				
+			}
+            //业务函数 根据当前信号量的值，来切换图片
+			function changePic(){
+				//去掉所有图片li的current类名
+				for (var i=0;i<oTu .length;i++) {
+ 					oTu [i].className="";
+				}
+				//把当前信号量的图片li加上current类名
+				oTu [index].className="current";
+				//去掉所有小圆点li的current类名
+				for(var i=0;i<oYuan.length;i++){
+					oYuan[i].className="";
+				}
+				//把当前信号量的小圆点li加上current类名
+				oYuan[index].className="current";
+			}
+		</script>
+		</script>
+	</body>
+
+</html>

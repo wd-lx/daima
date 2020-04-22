@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//递归函数相当于自己调用自己 
+			//10!=10*9! 9!=9*8! 一次类推，1！=1
+			function f(num){
+				if(num<=1){
+					return 1;
+				}else{
+					return f(num-1)*num;
+				}
+			}
+			alert("10!的结果为："+f(10));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>异形滚动</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 670px;
+            height: 221px;
+            background: url(images/number/pic_bg.gif);/* 背景图图片 */
+            margin: 100px auto;
+            border: 1px solid #000;
+            position: relative;
+            overflow:hidden;
+        }
+        .box ul{
+            list-style: none;
+        }
+        .box ul li{
+            position: absolute;
+            opacity: 1;
+            filter:alpha(opacity=100);
+        }
+        /*img这个元素不会根据父亲来设置宽度、高度，所以我们就要写：*/
+        .box ul li img{
+            width: 100%;
+            height: 100%;
+        }
+        /* 设置默认的图片位置和宽高 */
+        .box ul li.state0{width: 55px;height: 37px;left:-55px;top: 84px;opacity: 0; filter:alpha(opacity=0);}
+        .box ul li.state1{width: 71px;height: 54px;left:16px;top: 67px;}
+        .box ul li.state2{width: 122px;height: 86px;left:104px;top: 35px;}
+        .box ul li.state3{width: 161px;height: 112px;left:247px;top: 16px;}
+        .box ul li.state4{width: 122px;height: 86px;left:436px;top: 35px;}
+        .box ul li.state5{width: 71px;height: 54px;left:583px;top: 67px;}
+        .box ul li.state6{width: 55px;height: 37px;left:678px;top: 84px;opacity: 0; filter:alpha(opacity=0);}
+ 
+        /* 左按钮 */
+        .leftBtn{
+            position: absolute;
+            top: 151px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+        }
+        /* 右按钮 */
+        .rightBtn{
+            position: absolute;
+            top: 151px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <!-- 图片列表 -->
+        <ul>
+            <li class="state0"><img src="images/number/0.png" alt="" /></li>
+            <li class="state1"><img src="images/number/1.png" alt="" /></li>
+            <li class="state2"><img src="images/number/2.png" alt="" /></li>
+            <li class="state3"><img src="images/number/3.png" alt="" /></li>
+            <li class="state4"><img src="images/number/4.png" alt="" /></li>
+            <li class="state5"><img src="images/number/5.png" alt="" /></li>
+            <li class="state6"><img src="images/number/6.png" alt="" /></li>
+        </ul>
+        <!-- 右按钮 -->
+        <div class="btns">
+            <a href="javascript:;" id="leftBtn" class="leftBtn"></a>
+            <a href="javascript:;" id="rightBtn" class="rightBtn"></a>
+        </div>
+    </div>
+ 
+    <!-- 运动框架 -->
+    <script type="text/javascript" src="JSs/animate-2.0.1.js"></script>
+    <!-- 得到计算后样式的 -->
+    <script type="text/javascript" src="JSs/fetchComputedStyle.js"></script>
+    <script type="text/javascript">
+ 
+        //得到元素
+        var box = document.getElementById("box");
+        var rightBtn =  document.getElementById("rightBtn");
+        var leftBtn =  document.getElementById("leftBtn");
+        var lis = document.getElementsByTagName("li");//图片li的类数组
+        //注意：getElementsByTagName得到的是类数组，不能使用数组的方法，所以需要转化成数组
+        var lisArray = [];
+        var JsonArr = [];
+ 
+        var animatedTime = 600;
+        var tween = "BounceEaseOut";
+ 
+        //填充数组
+        for(var i = 0 ; i < lis.length; i++){
+            JsonArr.push({
+                "width"     : parseInt(fetchComputedStyle(lis[i],"width")),
+                "height"    : parseInt(fetchComputedStyle(lis[i],"height")),
+                "left"  : parseInt(fetchComputedStyle(lis[i],"left")),
+                "top"   : parseInt(fetchComputedStyle(lis[i],"top")),
+                "opacity" : parseInt(fetchComputedStyle(lis[i],"opacity"))
+            });
+            lisArray.push(lis[i]);
+        }
+ 
+        //右按钮事件监听
+        rightBtn.onclick = rightBtnHandler;
+ 
+        var timer = setInterval(rightBtnHandler,1500);//一开始就轮播
+        box.onmouseover = function(){clearInterval(timer);}//鼠标进入停止
+        box.onmouseout = function(){timer = setInterval(rightBtnHandler,1000);}//鼠标离开继续轮播
+ 
+        //右按钮事件函数
+        function rightBtnHandler(){
+            if(lisArray[1].isanimated)return;//函数节流
+            for(var i = 1;i <=lisArray.length-1;i++){//i不能从0开始
+                animate(lisArray[i],JsonArr[i-1],animatedTime,tween);
+            }
+            //让第一个元素瞬移到末尾处
+           for(var k in JsonArr[lisArray.length-1]){
+                lisArray[0].style[k] = JsonArr[lisArray.length-1][k]+"px";
+           }
+            // 交换身份（改变元素在数组中的位置）
+           lisArray.push(lisArray.shift());//向末尾添加删除的第一个元素
+        }
+ 
+        //左按钮的监听：
+        leftBtn.onclick = function(){
+            if(lisArray[1].isanimated)return;
+            for(var i = 0 ; i <= lisArray.length-2 ; i++){
+                animate(lisArray[i],JsonArr[i + 1],animatedTime,tween);
+            }
+            //让最后一个元素瞬移到开始处
+            for(var k in JsonArr[0]){
+                lisArray[lisArray.length-1].style[k] = JsonArr[0][k] + "px";
+            }
+            //交换身份！！
+            lisArray.unshift(lisArray.pop());
+        }
+    </script>
+</body>
+</html>

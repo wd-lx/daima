@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function fn1(){
+				console.log(111);
+				fn2();
+				console.log("fn1");
+			}
+			function fn2(){
+				console.log(222);
+				console.log("fn2");
+			}
+			fn1();*/
+/*			function fn1(){
+				console.log(111);
+				console.log("fn1");
+				fn2();
+			}
+			function fn2(){
+				console.log(222);
+				console.log("fn2");
+			}
+			fn1();*/
+			function day(){
+				var years = prompt("请输入年份");
+				if(run(years)){
+					alert("29天");
+				}else{
+					alert("28天");
+				}
+			}
+			day();
+			function run(year){
+				var flag = false;
+				if(year%4==0&&year%100!=0||year%400==0){
+					flag=true;
+				}
+				return flag;
+			}
+		</script>
+	</body>
+</html>

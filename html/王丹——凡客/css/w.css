@@ -1,0 +1,249 @@
+.t3{
+	height:950px ;
+	width: 1250px;
+	border: 1px solid black;
+	float: left;
+}
+.t4
+{
+	height:50px ;
+	width: 1250px;
+	border: 1px solid black;
+	float: left;
+	text-align: right;
+	line-height: 50px;
+	font-size: 5px;
+}
+.t5
+{
+	height:46px ;
+	width: 185px;
+	border: 0px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/1.jpg);
+}
+.t6
+{
+	height:700px ;
+	width: 1250px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 20px;
+}
+.t7
+{
+	height:700px ;
+	width: 750px;
+	border: 1px solid black;
+	float: left;
+}
+.t8
+{
+	height:352px ;
+	width:465px;
+	border: 1px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/login120412_newlogo.jpg);
+	margin-left: 140px;
+	margin-top: 175px;
+}
+.lt
+{
+	height:690px ;
+	width:490px;
+	border: 1px solid black;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.mn
+{
+	
+	height:50px ;
+	width:490px;
+	border: 0px solid black;
+	float: left;
+}
+.mn1
+{
+	height:50px ;
+	width:200px;
+	border: 0px solid black;
+	float: left;
+	line-height: 50px;
+	color: gainsboro;
+	font-size: 20px;
+	text-align: left;
+}
+.mn2
+{
+	height:50px ;
+	width:200px;
+	border: 0px solid black;
+	float: left;
+	line-height: 50px;
+	color: gainsboro;
+	margin-left: 80px;
+	text-align: right;
+	
+}
+.mn3
+{
+	height:0px ;
+	width:490px;
+	border: 0px solid black;
+	float: left;
+	background-color: red;
+	margin-top: 10px;
+}
+.mn4
+{
+	height:50px ;
+	width:490px;
+	border: 0px solid red;
+	float: left;
+	margin-top: 30px;
+}
+.mn5
+{
+	height:50px ;
+	width:300px;
+	border: 1px solid black;
+	float: left;
+	font-size: 20px;
+}
+.mn6
+{
+	height:50px ;
+	width:145px;
+	border: 1px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/CalculateValidateCode.jpg);
+	margin-left: 18px;
+}
+.mn7
+{
+	height:55px ;
+	width:490px;
+	border: 0px solid black;
+	float: left;
+	margin-top: 30px;
+}
+.mn8
+{
+	height:50px ;
+	width:300px;
+	border: 1px solid black;
+	float: left;
+	font-size: 20px;
+	
+}
+.mn9
+{
+	height:50px ;
+	width:145px;
+	border: 0px solid black;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 53px;
+	background-color: gainsboro;
+}
+.in
+{
+	height:53px ;
+	width:490px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+	font-size: 20px;
+}
+.in1
+{
+	height:53px ;
+	width:490px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+	font-size: 20px;
+}
+{
+	height:53px ;
+	width:490px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+	font-size: 52px;
+}
+.in2
+{
+	height:53px ;
+	width:490px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+	font-size: 20px;
+}
+.in3
+{
+	float: left;
+	height:20px ;
+	width:30px;
+	border: 0px solid black;	
+	margin-top: 15px;
+}
+.in4
+{
+	height:40px ;
+	width:490px;
+	border: 0px solid black;
+	float: left;
+	text-align: left;
+	margin-top: 30px;
+}
+.in5
+{
+	
+	height:53px ;
+	width:490px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+	font-size: 20px;
+	background-color: brown;
+	text-align: center;
+	line-height: 53px;
+	color: white;
+}
+.in6
+{
+	height:30px ;
+	width:1250px;
+	border: 0px solid black;
+	float: left;
+	color: gainsboro;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 50px;
+}
+.in7
+{
+	height:46px ;
+	width:1250px;
+	border: 0px solid black;
+	float: left;
+	margin-top: 10px;
+}
+.in8
+{
+	height:46px ;
+	width:440px;
+	border: 0px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/m.png);
+	margin-left: 450px;
+	background-size: 100%;
+}
+a{
+	text-decoration: none;
+}

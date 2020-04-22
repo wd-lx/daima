@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>无缝滚动</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#div2 {
+				width: 400px;
+				margin: 100px auto;
+			}
+			
+			input {
+				margin: 0 auto;
+				text-align: center;
+				margin-left: 80px;
+				font-size: 40px;
+			}
+			
+			#div1 {
+				width: 712px;
+				height: 108px;
+				margin: 100px auto;
+				position: relative;
+				background-color: red;
+				overflow: hidden;
+			}
+			
+			#div1 ul {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			#div1 ul li {
+				float: left;
+				width: 178px;
+				height: 108px;
+				list-style: none;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var oDiv = document.getElementById('div1');
+				var oUl = document.getElementsByTagName('ul')[0];
+				var aLi = oUl.getElementsByTagName('li');
+				var lBtn = document.getElementById('lbtn');
+				var rBtn = document.getElementById('rbtn');
+				//将ul复制一份相加复制给ul（这样ul相当于有8张图片）
+				oUl.innerHTML = oUl.innerHTML + oUl.innerHTML;
+				oUl.style.width = aLi[0].offsetWidth * aLi.length + 'px';
+				//speed控制图片移动方向和速度
+				var speed = 2;
+
+				function move() {
+					if(oUl.offsetLeft < -oUl.offsetWidth / 2) {
+						oUl.style.left = 0;
+					}
+					if(oUl.offsetLeft > 0) {
+						oUl.style.left = -oUl.offsetWidth / 2 + 'px';
+					}
+					oUl.style.left = oUl.offsetLeft + speed + 'px';
+				}
+				var timer = setInterval(move, 30);
+				// 鼠标移进时，图片停止运动
+				oDiv.onmouseover = function() {
+					clearInterval(timer);
+				};
+				//鼠标移出时，图片继续移动
+				oDiv.onmouseout = function() {
+					timer = setInterval(move, 30);
+				}
+				//按钮控制移动方向
+				lBtn.onclick = function() {
+					speed = -2;
+				}
+				rBtn.onclick = function() {
+					speed = 2;
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div id="div2">
+			<input type="button" value="向左" id="lbtn" />
+			<input type="button" value="向右" id="rbtn" />
+		</div>
+		<div id="div1">
+			<ul>
+				<li><img src="../img/01.jpg" alt="" /></li>
+				<li><img src="../img/02.jpg" alt="" /></li>
+				<li><img src="../img/03.jpg" alt="" /></li>
+				<li><img src="../img/04.jpg" alt="" /></li>
+			</ul>
+		</div>
+	</body>
+
+</html>

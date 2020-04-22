@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表页</title>
+<link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<style type="text/css">
+.hidden{display:none;}
+#smallLay{width:450px; height:356px;padding:4px 10px 10px;background-color:#FFFFFF;border:1px solid #05549d;color:#333333;line-height:24px;text-align:left;-webkit-box-shadow:5px 2px 6px #000;-moz-box-shadow:3px 3px 6px #555;}
+</style>
+<script type="text/javascript">
+function showid(idname){
+var isIE = (document.all) ? true : false;
+var isIE6 = isIE && ([/MSIE (\d)\.0/i.exec(navigator.userAgent)][0][1] == 6);
+var newbox=document.getElementById(idname);
+newbox.style.zIndex="9999";
+newbox.style.display="block"
+newbox.style.position = !isIE6 ? "fixed" : "absolute";
+newbox.style.top =newbox.style.left = "50%";
+newbox.style.marginTop = - newbox.offsetHeight / 2 + "px";
+newbox.style.marginLeft = - newbox.offsetWidth / 2 + "px";  
+var layer=document.createElement("div");
+layer.id="layer";
+layer.style.width=layer.style.height="100%";
+layer.style.position= !isIE6 ? "fixed" : "absolute";
+layer.style.top=layer.style.left=0;
+layer.style.backgroundColor="#000";
+layer.style.zIndex="9998";
+layer.style.opacity="0.6";
+document.body.appendChild(layer);
+var sel=document.getElementsByTagName("select");
+for(var i=0;i<sel.length;i++){        
+sel[i].style.visibility="hidden";
+}
+function layer_iestyle(){      
+layer.style.width=Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)
++ "px";
+layer.style.height= Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) +
+"px";
+}
+function newbox_iestyle(){      
+newbox.style.marginTop = document.documentElement.scrollTop - newbox.offsetHeight / 2 + "px";
+newbox.style.marginLeft = document.documentElement.scrollLeft - newbox.offsetWidth / 2 + "px";
+}
+if(isIE){layer.style.filter ="alpha(opacity=60)";}
+if(isIE6){  
+layer_iestyle()
+newbox_iestyle();
+window.attachEvent("onscroll",function(){                              
+newbox_iestyle();
+})
+window.attachEvent("onresize",layer_iestyle)          
+}  
+layer.onclick=function(){newbox.style.display="none";layer.style.display="none";for(var i=0;i<sel.length;i++){
+sel[i].style.visibility="visible";
+}}
+}
+</script>
+<body>
+<div style="width:1000px; height:130px; margin:0 auto; ">
+<div class="top">
+  <div class="you">
+   用户名：<input type="" name="pwd" style="width:120px;" />  密码：<input type="password" name="pwd" style="width:120px;" />
+</div>
+  <div style=" width:60px;  margin-top:5px; float:left;">
+   <a href="#"><img src="images/dl.png" /></a> </div> <span class="span"><a href="#">注册</a></span>
+   
+  <div class="wzsy">
+    <ul>
+    <li> <a href="#">收藏网页</a> </li>
+   <img src="images/fw.png" style="margin-top:2px" /> <li> <a href="#">网站首页</a> </li>
+    </ul>
+  </div>
+  
+ </div>
+<div style="float:left; width:150px; height:85px;">
+<a href="#"><img src="images/logo.jpg" /></a>
+</div>
+<div style="float:right;">
+<div style="width:840px; height:35px; ">
+<a href="#"><img src="images/ban.jpg" /></a>
+</div> 
+<div class="yd">
+  <table width="0" border="0" cellpadding="10" cellspacing="10">
+  <tr>
+    <td><a href="#">常见问题解答 互联网违法和不良信息举报</a></td>
+    <td><a href="#">常见问题解答 互联网违法和不良信息举报</a></td>
+    <td><a href="#">常见问题解答 互联网违法和不良信息举报</a></td>
+  </tr>
+  <tr>
+    <td><a href="#">常见问题解答 互联网违法和不良信息举报</a></td>
+    <td><a href="#">常见问题解答 互联网违法和不良信息举报</a></td>
+    <td><a href="#">常见问题解答 互联网违法和不良信息举报</a></td>
+  </tr>
+</table>
+
+  </div>
+</div>
+</div>
+
+<div class="ss">
+<div class="wz">
+<table width="0" border="0" cellpadding="10" cellspacing="10"   >
+  <tr>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+  </tr>
+  <tr>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+  </tr>
+</table>
+</div>
+<div style="width:1000px; height:98px; margin-top:15px;">
+<a href="#"><img src="images/banner.jpg" /></a>
+</div>
+<div class="wz">
+<table width="0" border="0" cellpadding="10" cellspacing="10"   >
+  <tr>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+  </tr>
+  <tr>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+    <td><a href="#">互联网违法和不良信息</a></td>
+  </tr>
+</table>
+</div>
+</div>
+<div style="width:980px; height:30px; margin:0 auto; margin-top:5px; font-size:15px;">
+<div style="float:left; width:20%; height:auto;">
+时间：2012年11月21日
+</div>
+<div style="float:left; width:55%; height:auto;">
+互联网违法和不良信息举报 	常见问题解答 互联网违法和不良信息举报
+</div>
+<div style="float:left; width:25%; height:auto;">
+<input type="text" size="20" />&nbsp;&nbsp;<input type="submit" value="搜索" />
+</div>
+</div>
+<!--导航-->
+<div id="nav">
+ <ul>
+ <li>
+<a href="#"> 首页</a>
+ </li>
+ <li>
+ <a href="#">要闻</a>
+ </li>
+ <li>
+ <a href="#">观点</a>
+ </li>
+ <li>
+ <a href="#">民众</a>
+ </li>
+ <li>
+<a href="#"> 图片</a>
+ </li>
+ <li>
+<a href="#">视频</a>
+ </li>
+ <li>
+<a href="#"> 曝光台</a>
+ </li>
+
+ </ul>
+
+</div>
+<div class="box">
+
+<div class="left">
+<div style="width:100%; height:700px;">
+<div class="lef">
+<div class="sp">
+<a href="#"><img src="images/spp.jpg" /></a>
+</div>
+<div style="width:98%; height:30px; color:#041157; font-weight:bold;  line-height:30px; border-bottom:1px solid #CCC;">
+民众声音
+</div>
+<div class="lb">
+    <ul>
+        <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症</a> 
+        </li>
+    </ul>
+  </div>
+
+<div style="width:98%; height:30px; color:#041157; font-weight:bold; line-height:30px; border-bottom:1px solid #CCC;">
+民生
+</div>
+<div class="lb">
+    <ul>
+        <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻等症</a> 
+        </li>
+    </ul>
+  </div>
+  
+</div>
+  <!-- 视频 民众 民生 end-->
+<div class="ght">
+<div style="width:90%; margin-left:10px; margin-top:10px; height:auto; font-size:18px; font-weight:bold;">
+[要闻]
+</div>
+
+<div style="width:90%; height:30px; margin-left:10px; font-weight:bold; line-height:30px; border-bottom:1px solid #CCC;">
+习近平：使发展成果更多个公平惠及全体人民
+</div>
+  <div class="lb">
+    <ul>
+        <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻（2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻（2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻（2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻（2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻（2012/09/11）</a> 
+        </li>
+    </ul>
+  </div>
+
+<div style="width:90%; height:30px; margin-left:10px; font-weight:bold; line-height:30px; border-bottom:1px solid #CCC;">
+赵乐际 兼任中组部部长 李源潮不再兼任
+</div>
+  <div class="lb">
+    <ul>
+        <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+    </ul>
+  </div>
+<!--要闻end-->
+<div style="width:90%; height:30px; color:#041157; margin-left:10px;  font-weight:bold; line-height:30px; border-bottom:1px solid #CCC;">
+专题
+</div>
+<div style="width:95%; height:auto; margin:0 auto; margin-top:5px;">
+<div style="float:left; width:135px; height:84px;">
+<a href="#"><img src="images/zyk.jpg" /></a>
+</div>
+
+<div class="zyk" style="float:right; font-size:12px; width:200px; height:84px;">
+<a href="#">莫言：尊敬的国王、王后陛下，尊敬的王室成员，女士们、先生们，我的讲稿忘在旅馆了，但是我的话记在脑子里了。</a>
+</div> 
+
+<div class="zy">
+    <ul>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+    </ul>
+  </div>
+  
+
+</div>
+
+<div style="width:90%; height:30px; color:#041157; margin-left:10px; font-weight:bold; line-height:30px; border-bottom:1px solid #CCC;">
+焦点
+</div>
+<div style="width:95%; height:auto; margin:0 auto; margin-top:5px;">
+<div style="float:left; width:135px; height:84px;">
+<a href="#"><img src="images/zyk.jpg" /></a>
+</div>
+
+<div class="zyk" style="float:right; font-size:12px; width:200px; height:84px;">
+<a href="#">莫言：尊敬的国王、王后陛下，尊敬的王室成员，女士们、先生们，我的讲稿忘在旅馆了，但是我的话记在脑子里了。</a>
+</div> 
+
+<div class="zy">
+    <ul>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐腹泻 （2012/09/11）</a> 
+        </li>
+    </ul>
+  </div>
+  
+
+</div>
+  <!-- 专题 焦点end-->
+</div>
+</div>
+ <!-- 要闻 专题 焦点end-->
+<div style="width:98%; height:auto;  margin-top:10px; color:#C80102;">
+图片新闻
+</div>
+<div style="width:100%; height:4px; margin-top:5px;  background-image:url(images/tt.jpg);">
+</div>
+
+<div style="margin-top:10px; width:100%; height:135px;">
+<div style=" width:142px; height:124px; float:left; margin-right:5px;">
+<a href="#"><img src="images/sv.jpg" /></a>
+</div>
+<div style=" width:142px; height:124px; float:left; margin-right:5px;">
+<a href="#"><img src="images/yd.jpg" /></a>
+</div>
+<div style=" width:142px; height:124px; float:left; margin-right:5px;">
+<a href="#"><img src="images/cd.jpg" /></a>
+</div>
+<div style=" width:142px; height:124px; float:left; margin-right:5px;">
+<a href="#"><img src="images/mlm.jpg" /></a>
+</div>
+<div style=" width:142px; height:124px; float:left; margin-right:5px;">
+<a href="#"><img src="images/ht.jpg" /></a>
+</div>
+</div>
+<div style="width:100%; height:6px;  background-image:url(images/tpxw.jpg);">
+</div>
+
+<div style="width:100%; height:190px; margin-top:10px;">
+<div style="width:216px; height:190px; float:left;">
+<div style="width:216px; height:75px;  margin-right:5px;">
+<a href="#"><img src="images/kj.jpg" /></a>
+</div>
+<div class="kj">
+<ul>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+
+</ul>
+</div>
+</div>
+<div style="width:216px; height:190px; float:left; margin-left:35px;">
+<div style="width:216px; height:75px;  margin-right:5px;">
+<a href="#"><img src="images/jy.jpg" /></a>
+</div>
+<div class="kj">
+<ul>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+
+</ul>
+</div>
+</div>
+<div style="width:216px; height:190px; float:left; margin-left:35px;">
+<div style="width:216px; height:75px;  margin-right:5px;">
+<a href="#"><img src="images/hb.jpg" /></a>
+</div>
+<div class="kj">
+<ul>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+<div style="width:100%; height:6px;  background-image:url(images/tpxw.jpg);">
+</div>
+
+<div style="width:100%; height:190px; margin-top:10px;">
+<div style="width:216px; height:190px; float:left;">
+<div style="width:216px; height:75px;  margin-right:5px;">
+<a href="#"><img src="images/yy.jpg" /></a>
+</div>
+<div class="kj">
+<ul>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+
+</ul>
+</div>
+</div>
+<div style="width:216px; height:190px; float:left; margin-left:35px;">
+<div style="width:216px; height:75px;  margin-right:5px;">
+<a href="#"><img src="images/ty.jpg" /></a>
+</div>
+<div class="kj">
+<ul>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+
+</ul>
+</div>
+</div>
+<div style="width:216px; height:190px; float:left; margin-left:35px;">
+<div style="width:216px; height:75px;  margin-right:5px;">
+<a href="#"><img src="images/yl.jpg" /></a>
+</div>
+<div class="kj">
+<ul>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+<li>
+<a href="#">[莫言：尊敬的国王、王后陛下]</a>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+<div style="width:100%; height:auto; margin-top:10px;">
+<div style="width:238px; height:160px; float:left; margin-right:5px;">
+<a href="#"><img src="images/czy.jpg" /></a>
+</div>
+<div style="width:238px; height:160px; float:left; margin-right:5px;">
+<a href="#"><img src="images/czy.jpg" /></a>
+</div>
+<div style="width:238px; height:160px; float:left; margin-right:5px;">
+<a href="#"><img src="images/czy.jpg" /></a>
+</div>
+
+</div>
+<!-- 刘科技end-->
+ </div>
+<!-- left end-->
+<div class="right">
+<div class="ren">
+<br />
+在这里<br />
+人人都是记者<br />
+人人都是编辑<br />
+<a href="#"><img src="images/fbxw.jpg" onclick="showid('smallLay');" />  </a>
+<br />
+你可以随时随地的上传新闻
+</div>
+
+<div style=" margin-left:300px; margin-top:30px;">
+
+</div>
+<div id="smallLay" style="display:none;">
+<div style="width:100%; height:30px; color: #999; font-family:微软雅黑; font-weight:500px; padding-top:10px; background-color:#FCFCFC; font-size:18px; border-bottom:#CCC 1px solid;">
+在线发布
+</div>
+<div style=" width:203px; height:51px; margin-left:120px; margin-top:30px;">
+<a href="#"><img src="images/wz.jpg" /></a>
+</div>
+<div style=" width:203px; height:51px; margin-left:120px; margin-top:30px;">
+<a href="#"><img src="images/tp.jpg" /></a>
+</div>
+<div style=" width:203px; height:51px; margin-left:120px; margin-top:30px;">
+<a href="#"><img src="images/fbsp.jpg" /></a>
+</div>
+</div>
+
+<div style="width:250px; height:240px; border:1px solid #CCC; margin-top:10px;">
+<div id="wrap">
+<ul id="diya">
+
+<li class="on">访谈</li>
+<li>民众播报</li>
+
+</ul>
+<br clear="all" />
+
+<div style=" width:230px; height:auto; border:none;" class="block"  >
+
+<table width="0" border="0">
+  <tr>
+    <td><img src="images/jd.jpg" /></td>
+    <td>丈夫怕被静电击不想拥抱妻子 ...丈夫怕被静电击不想拥抱妻子 ...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+ <ul>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+     <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+   
+   </ul>
+</div>
+<div style=" width:230px; height:auto; border:none;" class="none">
+  <table width="0" border="0">
+  <tr>
+    <td><img src="images/jd.jpg" /></td>
+    <td>丈夫怕被静电击不想拥抱妻子 ...丈夫怕被静电击不想拥抱妻子 ...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+  
+   <ul>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+   </ul>
+</div>
+
+</div>
+</div>
+
+<div style="width:250px; height:240px; border:1px solid #CCC; margin-top:10px;">
+<div id="wrap">
+<ul id="diya">
+
+<li class="on">评论</li>
+<li>民众解读</li>
+
+</ul>
+<br clear="all" />
+
+<div style=" width:230px; height:auto; border:none;" class="block"  >
+
+<table width="0" border="0">
+  <tr>
+    <td><img src="images/jd.jpg" /></td>
+    <td>丈夫怕被静电击不想拥抱妻子 ...丈夫怕被静电击不想拥抱妻子 ...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+ <ul>
+   
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+   </ul>
+</div>
+<div style=" width:230px; height:auto; border:none;" class="none">
+  <table width="0" border="0">
+  <tr>
+    <td><img src="images/jd.jpg" /></td>
+    <td>丈夫怕被静电击不想拥抱妻子 ...丈夫怕被静电击不想拥抱妻子 ...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+  
+   <ul>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+   </ul>
+</div>
+
+</div>
+</div>
+
+<div style="width:250px; height:200px; border:1px solid #CCC; margin-top:10px;">
+<div style="width:100%; height:35px; line-height:35px; border-bottom:#CCC 1px solid;">&nbsp;&nbsp;&nbsp;新闻调查</div>
+<div class="lb">
+    <ul>
+        <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐 7人出现呕吐</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐  7人出现呕吐 </a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐  7人出现呕吐</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐  7人出现呕吐</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐  7人出现呕吐</a> 
+        </li>
+             <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐  7人出现呕吐</a> 
+        </li>
+         <li>
+       <a href="#">10人朱雀门"黄鹤楼"就餐  7人出现呕吐</a> 
+        </li>
+    </ul>
+  </div>
+</div>
+
+<div style="width:250px; height:240px; border:1px solid #CCC; margin-top:10px;">
+<div id="wrap">
+<ul id="diya">
+
+<li class="on">民众解读</li>
+<li>民众风采</li>
+
+</ul>
+<br clear="all" />
+
+<div style=" width:230px; height:auto; border:none;" class="block"  >
+
+<table width="0" border="0">
+  <tr>
+    <td><img src="images/jd.jpg" /></td>
+    <td>丈夫怕被静电击不想拥抱妻子 ...丈夫怕被静电击不想拥抱妻子 ...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+ <ul>
+   
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+   </ul>
+</div>
+<div style=" width:230px; height:auto; border:none;" class="none">
+  <table width="0" border="0">
+  <tr>
+    <td><img src="images/jd.jpg" /></td>
+    <td>丈夫怕被静电击不想拥抱妻子 ...丈夫怕被静电击不想拥抱妻子 ...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+  
+   <ul>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+      <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+    <li>
+    <a href="#">[丈夫怕被静电击不想拥抱妻子 ...]</a>
+   </li>
+   </ul>
+</div>
+
+</div>
+</div>
+
+<div style="width:250px; height:240px; border:1px solid #CCC; margin-top:10px;">
+<div id="wrap">
+<ul id="diya">
+
+<li class="on">本周热门</li>
+<li>本月热门</li>
+<li>年度热门</li>
+</ul>
+<br clear="all" />
+
+<div style=" width:230px; height:auto; border:none;" class="block"  >
+   <ul>
+   <li>
+   <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+      <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+   </ul>
+</div>
+<div style=" width:230px; height:auto; border:none;" class="none">
+   <ul>
+   <li>
+   <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+    <li>
+    <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+    <li>
+    <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+    <li>
+    <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+    <li>
+    <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+      <li>
+    <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+    <li>
+    <a href="#">丈夫怕被静电击不想拥抱妻子 ...</a>
+   </li>
+   </ul>
+</div>
+<div style=" width:230px; height:auto; border:none;" class="none">
+ <ul>
+   <li>
+   <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+    <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+      <li>
+    <a href="#">28岁男子割喉38岁女友后自残</a>
+   </li>
+   </ul>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!--bottom-->
+<div class="bottom">
+<div style="width:1000px; height:5px; background-color:#AAAAAA;">
+</div>
+<div style="margin-top:20px; width:100%;">
+<ul>
+<li>
+24小时客户服务热线：400800010-82345125 常见问题解答 互联网违法和不良信息举报
+</li>
+<li>
+ 文明办网文明上网举报电话：029-816563545 举报邮箱：mznews@163.com
+</li>
+</ul>
+</div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+tab("wrap","diya","mouseover")
+tab("wraps","diyas")
+function tab(wrap,navul,eve){
+//tab效果封装，目前只有两种变换方式，一种为点击事件click（也是默认事件），另外一种为鼠标移过事件mouseover
+var divs=document.getElementById(wrap).getElementsByTagName("div");
+var lis=document.getElementById(navul).getElementsByTagName("li");
+for(var i=0;i<lis.length;i++){
+lis[i].indx=i;
+if(eve=="click" || eve==null){
+lis[i].onclick=function(){
+	for(i=0;i<lis.length;i++){
+		
+		lis[i].className="";
+		divs[i].className="none"
+		
+		this.className="on";
+		divs[this.indx].className="block";
+		}
+	}
+}else if(eve=="mouseover"){
+	lis[i].onmouseover=function(){
+		for(i=0;i<lis.length;i++){
+		lis[i].className="";
+		divs[i].className="none";
+		
+		this.className="on";
+		divs[this.indx].className="block";
+			}
+		}
+	}
+}
+}
+</script> 
+
+<script type="text/javascript">
+tab("wrap","diya","mouseover")
+tab("wraps","diyas")
+function tab(wrap,navul,eve){
+//tab效果封装，目前只有两种变换方式，一种为点击事件click（也是默认事件），另外一种为鼠标移过事件mouseover
+var divs=document.getElementById(wrap).getElementsByTagName("div");
+var lis=document.getElementById(navul).getElementsByTagName("li");
+for(var i=0;i<lis.length;i++){
+lis[i].indx=i;
+if(eve=="click" || eve==null){
+lis[i].onclick=function(){
+	for(i=0;i<lis.length;i++){
+		
+		lis[i].className="";
+		divs[i].className="none"
+		
+		this.className="on";
+		divs[this.indx].className="block";
+		}
+	}
+}else if(eve=="mouseover"){
+	lis[i].onmouseover=function(){
+		for(i=0;i<lis.length;i++){
+		lis[i].className="";
+		divs[i].className="none";
+		
+		this.className="on";
+		divs[this.indx].className="block";
+			}
+		}
+	}
+}
+}
+</script> 
+
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				height: 100px;
+				width: 700px;
+				border: 1px solid black;
+				float: left;
+			}
+			p{
+				width: 80px;
+				height: 80px;
+				float: left;
+				border-radius: 50%;
+				margin: 10px;
+				background-color: #CCCCCC;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<script type="text/javascript">
+		/*	var ps=document.getElementById("box").getElementsByTagName("p");
+			for (var i=0;i<ps.length;i++) {
+				ps[i].idx=i;
+				//监听
+				ps[i].onmouseover=function(){
+					/*遇到每个p的时候,其实是要做两件事
+					第一件事:让所有(包含自己)都变成灰色
+					for (var j=0;j<ps.length;j++) {
+						ps[j].style.backgroundColor="#CCCCCC"
+					}
+					//第二件事:让自己变成红色
+					this.style.backgroundColor="red";
+				}
+			}*/
+            var oBox = document.getElementById("box").getElementsByTagName("p");
+			for(var i =0;i<oBox.length;i++){
+				oBox[i].index = i;
+				oBox[i].onmousemove = function(){
+					for(var j =0;j<oBox.length;j++){
+						oBox[j].style.backgroundColor = "#CCCCCC"
+					}
+					this.style.backgroundColor="blue";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	height: 440px;
+	width: 360px;
+	background-color: red;
+	margin: 20px auto;
+}
+.box1{
+	height: 50px;
+	width: 360px;
+	background-color: yellow;
+}
+.saoma{
+	height: 50px;
+	width: 180px;
+	background-color: white;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+.zhanghu{
+	height: 50px;
+	width: 180px;
+	background-color: rosybrown;
+	line-height: 50px;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+}
+input{
+	height: 30px;
+	width: 240px;
+	margin-left: 60px;
+	margin-top: 30px;
+	outline: none;
+	text-indent: 16px;
+}

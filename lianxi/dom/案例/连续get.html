@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 100px;
+				border: 1px solid gray;
+			}
+			p{
+				float: left;
+				width: 60px;
+				height: 60px;
+				background-color: #ccc;
+				margin-right: 10px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+			<p>
+				<span>&clubs;</span>
+				<span>&clubs;</span>
+				<span>&clubs;</span>
+			</p>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<p></p>
+			<p></p>
+			<p>
+				<span>&clubs;</span>
+				<span>&clubs;</span>
+				<span>&clubs;</span>
+			</p>
+			<p></p>
+		</div>
+		<script type="text/javascript">
+			var oA = document.getElementsByTagName("div")[0].getElementsByTagName("p")[1].getElementsByTagName("span")[1];
+			var oP = document.getElementsByTagName("div")[1].getElementsByTagName("p")[2].getElementsByTagName("span")[2];
+		     oA.style.color = "red";
+		     oP.style.color = "#007CF7";
+		</script>
+	</body>
+</html>

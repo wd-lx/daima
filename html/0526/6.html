@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;	
+			}
+			.content{
+				width: 400px;
+				height: 500px;
+				background-color: burlywood;
+				margin: 30px auto;
+			}
+			.title{
+				width: 200px;
+				height: 100px;
+				/*background-color: yellowgreen;*/
+				margin: 30px auto;
+				font-size: 40px;
+				font-weight: bolder;
+				text-align: center;
+				line-height: 100px;
+			}
+			.user{
+				width: 300px;
+				height: 200px;
+				/*background-color: yellowgreen;*/
+				margin: 30px auto;
+				font-size: 30px;
+				font-weight: bolder;
+				text-align: center;
+				line-height: 200px;
+				border: 2px solid red;
+			}
+			
+			.btn{
+				width: 100px;
+				height: 50px;
+				background-color: #ccc;
+				margin: 30px auto;
+				font-size: 20px;
+				font-weight: bolder;
+				text-align: center;
+				line-height: 50px;
+				border-radius:10px ;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="title"> 点名器</div>
+			<div class="user">小明</div>
+			<div class="alr">已点过：</div>
+			<div class="btn">点名</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var names = ["小明", "大卫", "阿花", "张飒", "李四1", "李四111", "李四99", "李四2", "李四3", "李四4", "李四5", "李四6", "李四7", "李四8", "李四9", "李四10"];
+		var user = document.getElementsByClassName("user")[0];
+		var btn = document.getElementsByClassName("btn")[0];
+		var x = 0;
+		
+		btn.onclick = function(){
+			x = x+1;
+			if(x>names.length-1){
+				x=0;
+			}
+			user.innerText = names[x];
+			console.log(x);
+		}
+		
+		
+		
+	</script>
+</html>

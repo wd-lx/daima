@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p class="title">
+			小明
+		</p>
+
+		<button>点名</button>
+	</body>
+	<script type="text/javascript">
+		var user = document.getElementsByClassName("title")[0];
+		
+		var names = ["小明","大卫","阿花","张飒","李四1","李四111","李四99","李四2","李四3","李四4","李四5","李四6","李四7","李四8","李四9","李四10"];
+		
+		var x = Math.random()*names["length"];
+		
+		var y = Math.floor(x);
+		
+		user.innerText = names[y];
+		
+		console.log(y)
+		
+	</script>
+</html>

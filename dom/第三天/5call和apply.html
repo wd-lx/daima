@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj = {
+				"name":"小王",
+				"age":18,
+			    "sex":"女",
+			}
+			var obj1 = {
+				"name":"小李",
+				"age":20,
+				"sex":"不详",
+			}
+			var obj2 = {
+				"name":"小花",
+				"age":16,
+				"sex":"女"
+			}
+			function aa(){
+				alert(this.name);
+			}
+    //	   aa.call(obj);  小王
+           function aa(a,b,c){
+           	console.log(this.name);
+           	console.log(a+b+c);
+           }
+//         aa.call(obj,2,3,4);
+           aa.apply(obj1,[2,3,4]);
+		</script>
+	</body>
+</html>

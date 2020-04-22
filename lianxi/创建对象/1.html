@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			///利用字面量创建对象
+/*			var dog = {
+				uname :"可可",
+				type :"阿拉斯加犬",
+				age :5,
+				color:"red",
+				jineng: function(){
+					console.log("汪汪汪");
+				}
+			}
+			console.log(dog.uname);
+			console.log(dog["type"]);
+			dog.jineng();*/
+			//利用 new object创建对象
+			/*var obj = new Object();
+			obj.uname = "鸣人";
+			obj.age = 19;
+			obj.sex = "女";
+			obj.fangfa = function(){
+				console.log("哈哈哈");
+			}
+			console.log(obj.uname);
+			console.log(obj["age"]);
+			console.log(obj.sex);
+			obj.fangfa();*/
+			//利用 构造函数创建对象
+			/*function Star(uname,age,sex){
+				this.name=uname;
+				this.age=age;
+				this.sex=sex;
+				this.sing=function(song){
+					console.log(song);
+				}
+			}
+			var a = new Star("周杰伦",22,"男");
+			console.log(typeof a);
+			console.log(a.age);
+			console.log(a.name);
+			console.log(a.sex);
+			a.sing("冰雨");*/
+			function Youxi(uname,type,attack){
+				this.uname = uname;
+				this.type = type;
+				this.attack = attack;
+				this.ren = function(){
+					console.log("攻击");
+				}
+			}
+			var b = new Youxi("后羿","射手","远程");
+			console.log(b.uname);
+			console.log(b.type);
+			console.log(b.attack);
+			b.ren();
+		</script>
+	</body>
+</html>

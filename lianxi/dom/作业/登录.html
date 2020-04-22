@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<style>
+			.ok {
+				color: green;
+				border: 1px solid green;
+			}
+			
+			.error {
+				color: red;
+				border: 1px solid red;
+			}
+		</style>
+		<script>
+			//校验账号的格式
+			function check_code() {
+				//获取账号
+				var code = document.getElementById("code").value;
+				//校验其格式(\w字母或数字或下划线)
+				var span = document.getElementById("code_msg");
+				var reg = /^\w{6,10}$/;
+				if(reg.test(code)) {
+					//通过，增加ok样式
+					span.className = "ok";
+				} else {
+					//不通过，增加error样式
+					span.className = "error";
+				}
+			}
+			function check_pwd() {
+				var code2 = document.getElementById("pwd").value;
+				var span2 = document.getElementById("pwd_msg");
+				var reg2 = /^\w{6,10}$/;
+				if(reg2.test(code2)) {
+					span2.className = "ok";
+				} else {
+					span2.className = "error";
+				}
+			}
+			 function check() {
+    if(document.getElementById("code").value=="") {
+        alert("没有输入用户名！");
+         return false;
+      } else if(document.getElementById("pwd").value=="") {
+        alert("没有输入密码！");
+        return false;
+      } else {
+        alert("提交成功！")
+        return true;
+       }
+    }
+		</script>
+	</head>
+
+	<body>
+		<form action="#">
+			<p>
+				账号：
+				<input type="text" id="code" onblur="check_code()" />
+				<span id="code_msg">6-10位字母、数字、下划线</span>
+			</p>
+			<p>
+				密码：
+				<input type="text" id="pwd" onblur="check_pwd()" />
+				<span id="pwd_msg">8-20位字母、数字、下划线</span>
+			</p>
+			<input type="submit" onclick="check()">
+		</form>
+	</body>
+
+</html>

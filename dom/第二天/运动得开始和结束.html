@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				position: absolute;
+				height: 80px;
+				width: 80px;
+				top: 100;
+				left: 100;
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" value="开始" />
+		<input type="button" id="" value="暂停" />
+		<div id="box"></div>
+		<script type="text/javascript">
+			var oBox = document.getElementById("box");
+			var start = document.getElementsByTagName("input")[0];
+			var start1 = document.getElementsByTagName("input")[1];
+			var nowLeft = 100;
+			var timer;
+			start.onclick = function() {
+				//设表先停	clearInterval(timer) //设置定时器
+				timer = setInterval(function() {
+					nowLeft += 2;
+					oBox.style.left = nowLeft + "px";
+				}, 20);
+			}
+			start1.onclick = function(){
+				clearInterval(timer);
+			}
+			var timer = setInterval(function(){
+				nowLeft += 7;
+				if(nowLeft > 600){
+					nowLeft = 600;
+					clearInterval(timer);
+				}
+				oBox.style.left = nowLeft + "px";
+				console.log(nowLeft);
+			},20);
+
+		</script>
+	</body>
+
+</html>

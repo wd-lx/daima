@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}	
+.top{
+	height: 104px;
+	width: 100%;
+	/*background-color: aquamarine;*/
+}
+.top1{
+	position: relative;
+    z-index: 1;
+    margin: auto;
+    width: 1000px;
+    height: 104px;
+   /* background-color: brown;*/
+}
+.top1-1{
+	    background-repeat: no-repeat;
+	    background-position: -308px -57px;
+        width: 125px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 500px;
+        overflow: hidden;
+	    background-image: url(../img/image/xb.png);
+}
+.top1-2{
+	background-image: url(../img/image/xb.png);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    width: 304px;
+    height: 100px;
+    position: absolute;
+    top: 7px;
+    right:0px;
+    z-index:1;
+}
+.banner{
+	height:650px ;
+	width: 100%;
+	background-image: url(../img/image/banner.jpg);
+	background-size: center top;
+	background-position: top center;
+}
+.zhuce{
+	height:550px; width:350px;
+    float:right; 
+    margin:50px 180px 0 0;
+    background-color:#FFF;	
+}
+.huiyuan{
+	height:25px; width:350px;
+    margin:15px 0px 0 30px;
+     /*order-bottom: 1px solid gray;*/
+}
+/*huiyuan类的span样式*/		 
+.huiyuan span{  font-size: 18px;
+            font-weight: bold;
+			float:left}
+/*让div靠右，控制已注册可直接登录*/
+.zou{ height:25px; width:150px; float:right; font-size:13px; color:#666;
+      margin:3px 25px 0 0;}  
+/*zhuce类input的样式*/	  
+.zou a{
+	color: red;
+}
+.zhuce input{height: 40px; width: 260px;
+            border: 1px solid #CCC;
+            padding-left:30px;
+			margin:25px 0px 0px 28px;
+        }
+.zhuce .shouji{
+	outline: none;
+	background-image: url(../img/tu/shouji.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	text-indent: 5px;
+}
+/*验证码文本框*/
+.zhuce  .yanzengma-1{ width:135px;
+                      outline:none ;
+                      background-image: url(../img/tu/xinxi.png);
+                      background-repeat: no-repeat;
+	background-position: 5px center;
+	text-indent: 5px;
+                      }
+/*获取验证码*/
+.zhuce  .yanzengma-2{ width:110px; margin-left:10px; background-color:#CCC; color:#999; text-align:center; padding:0;} 
+/*立即注册的样设*/
+.zhuce .mima{
+	outline: none;
+	background-image: url(../img/tu/mima.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	text-indent: 5px;
+}
+.zhuce  .tijiao{
+	width:293px;
+ background: #f10180;
+            color: white;
+            border: 1px solid #f10180;
+            text-align: center;
+			}
+/*复选框的大小*/		
+.zhuce input[type="checkbox"]{height:15px; width:15px; }	
+/*复选框*/
+.zhuce .fu{height:80px; width:50px; float:left; } 
+/*复选框右边的字*/ 	
+.zhuce .zi{height:50px; width:250px; float:left; margin-top:23px; font-size:14px;}
+/*-----------------超链接--------------------*/
+
+/*.zi内我已阅读并接受以下条款......
+  字体颜色
+*/
+.zhuce .zi  a:link,a:visited{text-decoration:none; color:#39F; font-size:12px;} 
+.zhuce .zi  a:hover{ color:#33F;} 
+.zou  a{text-decoration:none; color:#F00;} /*直接登陆*/
+/*-----------插入图片到input------------*/
+.footer {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 12px;
+            color: gray;
+        }

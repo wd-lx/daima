@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+			var result = [];
+
+			for(var i = 0; i < 6; i++) {
+				while(true) {
+					// 随机一个下标
+					var r = parseInt(Math.random() * 20);
+					// 验证你产生的这个下标对应的arr里面的数字，在不在result里面
+					if(result.indexOf(arr[r]) == -1) {
+						break;
+					}
+				}                                                                                                                                                
+
+				result.push(arr[r]);
+			}
+
+			console.log(result);
+		</script>
+	</body>
+
+</html>

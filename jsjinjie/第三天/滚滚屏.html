@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				overflow: hidden;
+			}
+			
+			div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+			
+			ul {
+				position: relative;
+			}
+			
+			li {
+				outline: 1px solid red;
+				position: relative;
+				font-size: 50px;
+				font-family: Microsoft YaHei;
+				font-weight: bold;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<ul>
+				<li>
+					第一屏
+				</li>
+				<li>
+					第二屏
+				</li>
+				<li>
+					第三屏
+				</li>
+				<li>
+					第四屏
+				</li>
+			</ul>
+		</div>
+
+		<script>
+			var type = true; //控制动画的开关
+			var bodyW = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+			var bodyH = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
+			var div = document.getElementsByTagName("div")[0];
+			div.style.width = bodyW + "px";
+			div.style.height = bodyH + "px";
+			var ul = document.getElementsByTagName("ul")[0];
+
+			var liLen = ul.getElementsByTagName("li"); //获取li
+
+			var spanLen = ul.getElementsByTagName("span");
+
+			//设置Li的高度
+			for(var i = 0; i < liLen.length; i++) {
+				liLen[i].style.height = bodyH + "px";
+				liLen[i].style.lineHeight = bodyH + "px";
+			}
+			ul.style.height = bodyH * liLen.length + "px"; //设置ul的高
+			ul.style.width = bodyW + "px"; //设置ul的宽
+
+			//鼠标的滚轮事件(兼容 ie and chrome);
+			div.onmousewheel = function(event) {
+				var event = event || window.event;
+				var direction = event.wheelDelta && (event.wheelDelta > 0 ? "mouseup" : "mousedown");
+				//向上滚动
+				if(direction == "mouseup") {
+
+					mouseTop();
+				}
+
+				//向下滚动
+				if(direction == "mousedown") {
+					mouseBottom();
+
+				}
+			}
+
+			//鼠标滚轮事件(兼容 firefox)
+			document.body.addEventListener("DOMMouseScroll", function(event) {
+
+				var direction = event.detail && (event.detail > 0 ? "mousedown" : "mouseup");
+				//向下滚动
+				if(direction == "mousedown") {
+					mouseBottom();
+				}
+
+				//向上滚动
+				if(direction == "mouseup") {
+					mouseTop();
+				}
+			});
+
+			//向上滚动代码函数
+			function mouseTop() {
+				//第三屏
+				if(div.scrollTop == liLen[3].offsetTop && type == true) {
+					type = false;
+					//延时滚动。要不然会先执行代码再执行滚轮，那样会多滚动出一截子。
+					setTimeout(function() {
+
+						AnimationTop(2);
+
+					}, 10);
+					return;
+				}
+
+				//第二屏
+				if(div.scrollTop >= liLen[2].offsetTop && type == true) {
+					type = false;
+					//延时滚动。要不然会先执行代码再执行滚轮，那样会多滚动出一截子。
+					setTimeout(function() {
+
+						AnimationTop(1);
+
+					}, 10);
+					return;
+				}
+
+				//第一屏
+				if(div.scrollTop >= liLen[1].offsetTop && type == true) {
+					type = false;
+					//延时滚动。要不然会先执行代码再执行滚轮，那样会多滚动出一截子。
+					setTimeout(function() {
+
+						AnimationTop(0);
+
+					}, 10);
+					return;
+				}
+			}
+
+			//行下滚动代码函数
+			function mouseBottom() {
+				//            console.log("向下")
+
+				//第二屏
+				if(div.scrollTop == liLen[0].offsetTop && type == true) {
+					type = false;
+
+					//延时滚动。要不然会先执行代码再执行滚轮，那样会多滚动出一截子。
+					setTimeout(function() {
+
+						AnimationBottom(1);
+
+					}, 10);
+
+					return;
+				}
+
+				//第三屏
+				if(div.scrollTop <= liLen[1].offsetTop && type == true) {
+					type = false;
+					//延时滚动。要不然会先执行代码再执行滚轮，那样会多滚动出一截子。
+					setTimeout(function() {
+
+						AnimationBottom(2);
+
+					}, 10);
+					return;
+				}
+
+				//第四屏
+				if(div.scrollTop <= liLen[2].offsetTop && type == true) {
+					type = false;
+					//延时滚动。要不然会先执行代码再执行滚轮，那样会多滚动出一截子。
+					setTimeout(function() {
+
+						AnimationBottom(3);
+
+					}, 10);
+					return;
+				}
+			}
+
+			//向上滚轮动画函数
+			function AnimationTop(num) {
+				var t = setInterval(function() {
+					if(div.scrollTop > liLen[num].offsetTop) {
+
+						//控制移动速度（慢--快--慢）
+						// -- 慢
+						if(div.scrollTop >= liLen[num].offsetTop + (parseInt(liLen[num].style.height) / 11 * 9)) {
+
+							div.scrollTop -= 1;
+
+							// -- 快
+						} else if(div.scrollTop <= liLen[num].offsetTop + (parseInt(liLen[num].style.height) / 11 * 9) && div.scrollTop >= liLen[num].offsetTop + (parseInt(liLen[num].style.height) / 11 * 2)) {
+							div.scrollTop -= 3;
+
+							// -- 慢
+						} else if(div.scrollTop <= liLen[num].offsetTop + (parseInt(liLen[num].style.height) / 11 * 2) && div.scrollTop >= liLen[num].offsetTop) {
+
+							div.scrollTop -= 1;
+
+						}
+
+					} else {
+						div.scrollTop = liLen[num].offsetTop;
+						clearInterval(t);
+						type = true;
+					}
+				}, 1);
+			}
+
+			//向下滚轮动画函数
+			function AnimationBottom(num) {
+				var t = setInterval(function() {
+					if(div.scrollTop < liLen[num].offsetTop) {
+
+						//控制移动速度（先快后慢）
+						// -- 慢
+						if(div.scrollTop <= liLen[num].offsetTop / 11 * 2) {
+
+							div.scrollTop += 1;
+
+							// -- 快
+						} else if(div.scrollTop >= liLen[num].offsetTop / 11 * 2 && div.scrollTop <= liLen[num].offsetTop / 11 * 10) {
+							div.scrollTop += 3;
+
+							// -- 慢
+						} else if(div.scrollTop >= liLen[num].offsetTop / 11 * 10 && div.scrollTop <= liLen[num].offsetTop) {
+
+							div.scrollTop += 1;
+
+						}
+
+					} else {
+						div.scrollTop = liLen[num].offsetTop;
+						clearInterval(t);
+						type = true;
+					}
+				}, 1);
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//indexOf()根据字符返回位置  str.indexOf("要查找的字符",[起始位置])
+			/*var str = "改革春风吹满地，春天来了";
+			console.log(str.indexOf("春"))  //2
+			console.log(str.indexOf("春",3));*/  //8
+			//求"abcdbefbc"b出现的位置和次数
+			var str = "abcdbefbc";
+			var index = str.indexOf("b");
+			var num = 0;
+			while(index!==-1){
+				console.log(index);
+				num++;
+				index = str.indexOf("b",index+1);
+			}
+			console.log("b出现的次数是："+num);
+			//求[red,yellow,green,red,pink,red]出现的位置和次数
+			/*var str = ["red","yellow","green","red","pink","red"];
+			var index = str.indexOf("red");
+			var num = 0;
+			while(index!==-1){
+				console.log(index);
+				num++;
+				index = str.indexOf("red",index+1);
+			}
+			console.log("red出现的次数是："+num);*/
+		</script>
+	</body>
+</html>

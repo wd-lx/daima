@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			
+			#canvas {
+				background: #5151a2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="800" height="600"></canvas>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var ctx = document.getElementById("canvas").getContext("2d");
+	var num = 0;
+	window.onload = function() {
+		buttom();
+		yezi();
+	}
+	//设置定时器动画
+
+	setInterval(function() {
+		ctx.clearRect(0, 0, 800, 600);
+		buttom();
+		yezi();
+	}, 20);
+
+	function buttom() {
+		ctx.beginPath();
+		var liner = ctx.createLinearGradient(390, 600, 410, 600);
+		liner.addColorStop(0, "#ccc");
+		liner.addColorStop(0.5, "#fff");
+		liner.addColorStop(1, "#ccc");
+		ctx.fillStyle = liner;
+		ctx.moveTo(395, 300);
+		ctx.lineTo(405, 300);
+		ctx.lineTo(410, 600);
+		ctx.lineTo(390, 600);
+		ctx.closePath();
+		ctx.fill();
+
+	}
+
+	function yezi() {
+		ctx.save(); //保存默认情况下的canvas变换状态
+		ctx.beginPath();
+		ctx.translate(400, 300);
+		ctx.globalAlpha = 0.98;
+		// 设置第一次状态下 坐标系旋转度数
+		ctx.rotate((Math.PI / 180) * num);
+		var liner1 = ctx.createLinearGradient(30, -12, 30, 12);
+		liner1.addColorStop(0, "#ccc");
+		liner1.addColorStop(0.5, "#fff");
+		liner1.addColorStop(1, "#ccc");
+		ctx.fillStyle = liner1;
+		ctx.save(); //保存第一次状态  平移坐标系变换
+		ctx.beginPath();
+		bind(); //调用函数
+
+		//绘制第二片叶子
+		ctx.beginPath();
+		ctx.rotate((Math.PI / 180) * 120); //坐标系旋转120°
+		ctx.save(); //保存旋转坐标系状态，为第三片叶子做铺垫
+		bind(); //调用函数
+		//绘制第三片叶子
+		ctx.beginPath();
+		ctx.rotate((Math.PI / 180) * 120); //坐标系旋转120°
+		ctx.save();
+		bind(); //调用函数
+		ctx.restore(); //回复第3次状态前（旋转坐标系）
+		ctx.restore(); //回复第2次状态前（旋转坐标系）
+
+		//绘制叶子中心圆圈
+		ctx.beginPath();
+		var arcgradient = ctx.createRadialGradient(0, 0, 0, 0, 0, 16);
+		arcgradient.addColorStop(0, "#ccc");
+		arcgradient.addColorStop(0.1, "#fff");
+		arcgradient.addColorStop(1, "#ccc");
+		ctx.arc(0, 0, 10, 0, Math.PI * 2);
+		ctx.fillStyle = arcgradient;
+		ctx.fill();
+
+		ctx.restore(); //回复第1次状态前（平移坐标系）
+
+		num++; //第一状态坐标系旋转度数增加
+		ctx.restore();
+
+	}
+
+	//绘制每片叶子都重复的代码，这里做一个函数包装
+	function bind() {
+		ctx.moveTo(0, 0);
+		ctx.quadraticCurveTo(10, -12, 30, -12);
+		ctx.lineTo(190, -3);
+		ctx.quadraticCurveTo(200, 0, 190, 3);
+		ctx.lineTo(30, 12);
+		ctx.moveTo(0, 0);
+		ctx.quadraticCurveTo(10, 12, 30, 12);
+		ctx.fill();
+	}
+</script>

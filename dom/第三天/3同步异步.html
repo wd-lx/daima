@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//同步   
+/*			console.log(1);
+			console.log(2);
+			console.log(3);
+			for(var i=1;i<=100;i++){
+				console.log("hello");
+			}
+			console.log(4);//1 2 3 100次hello 4*/
+			//异步  etInterval、setTimeout、Ajax、Node.js……等等
+			var count =0;
+			var timer = setInterval(function(){
+				console.log("h");
+				count++;
+				if(count==300){
+					clearInterval(timer);
+					c();
+				}
+			},20)
+			function c(){
+				alert("全部输出完毕");
+			}
+		</script>
+	</body>
+</html>

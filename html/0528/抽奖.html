@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.chou{
+				width: 500px;
+				height: 500px;
+				/*background-color: darkorange;*/
+				margin: 50px auto;
+				text-align: center;
+				border: 3px solid plum;
+			}
+			h1{
+				line-height: 100px;
+				/*background-color: salmon;*/
+			}
+			.content{
+				width: 75%;
+				height: 200px;
+				/*background-color: greenyellow;*/
+				color: brown;
+				font-size: 75px;
+				line-height: 200px;
+				border: 2px solid slateblue;
+				border-radius: 50px;
+				margin: 0 auto;
+			}
+			#btn{	
+				margin: 10px;
+				width: 200px;
+				height: 80px;
+				background-color: blueviolet;
+				color: white;
+				font-size: 50px;
+				border-radius: 30px;
+				outline: none;
+				margin-top: 50px;
+			}
+			.box{
+				width: 200px;
+				height: 500px;
+				background-color: burlywood;
+				position: fixed;
+				right: 20px;
+				top: -89px;
+				color: slateblue;
+				font-size: 20px;				
+				margin: 138px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chou">
+			<h1>抽奖环节</h1>
+			<div class="content">
+				幸运观众
+			</div>
+			<input type="button" id="btn" value="开始" />
+		</div>
+		<div class="box">
+		
+		</div>		
+	</body>
+	<script type="text/javascript">
+	    var box = document.querySelector(".box");
+		var btn = document.querySelector("#btn");
+		var lucky = document.querySelector(".content");		
+		var names = ["紫怡","雅玉","檀慧","悦曦","静纾","惠潞","梦蓓","雅妙","碧菱","珺楚"];
+		var x = 0;
+        var timer; 
+            
+          btn.onclick = function(){
+          	if(btn.value == "开始"){
+          		btn.value = "暂停";
+          	    timer= setInterval(choujiang,50);
+          	    
+          		
+          	}else{
+          		btn.value = "开始"; 
+          		lucky.innerText =names[x];
+          		clearInterval(timer);
+          		var luck = lucky.innerText + "<br/>";
+          		box.innerHTML += luck;
+          	}
+
+          }
+            function choujiang(){
+          	      	lucky.innerText = names[x];
+          	      	x++;
+          	      	if(x>names.length-1){
+          	      		x=0;
+          	      	}
+          	      }
+	</script>

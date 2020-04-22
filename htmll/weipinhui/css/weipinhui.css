@@ -1,0 +1,200 @@
+.{
+	margin: 0;
+	padding: 0;
+}
+.top{
+	height: 104px;
+	width: 100%;
+	/*background-color: aquamarine;*/
+}
+.top1{
+	position: relative;
+    z-index: 1;
+    margin: auto;
+    width: 1000px;
+    height: 104px;
+   /* background-color: brown;*/
+}
+.top1-1{
+	    background-repeat: no-repeat;
+	    background-position: -308px -57px;
+        width: 125px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 500px;
+        overflow: hidden;
+	    background-image: url(../img/image/xb.png);
+}
+.top1-2{
+	background-image: url(../img/image/xb.png);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    width: 304px;
+    height: 100px;
+    position: absolute;
+    top: 7px;
+    right:0px;
+    z-index:1;
+}
+.banner{
+	height:650px ;
+	width: 100%;
+	background-image: url(../img/image/banner.jpg);
+	background-size: center top;
+	background-position: top center;
+}
+.saoma{
+	height:450px; width:350px;
+    float:right; 
+    margin:100px 180px 0 0;
+    background-color:#FFF;	
+}
+.yonghu{
+	height:25px; 
+	width:350px;
+    margin:15px 0px 0px 0px;
+    /*background-color: black;*/
+}
+.yonghu span{  font-size: 18px;
+            font-weight: bold;
+			float:left;
+			}
+.denglu{
+	cursor: pointer;
+	margin-left: 60px;
+}
+.denglu:hover{
+	color: palevioletred;
+}
+.denglu1{
+	cursor: pointer;
+	margin-left: 80px;
+	color: palevioletred;
+}
+.saoma input{
+	height: 40px; width: 260px;
+            border: 1px solid #CCC;
+            padding-left:30px;
+			margin:30px 0px 0px 28px;
+}
+.saoma .shouji{
+	outline: none;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	text-indent: 5px;
+}
+.saoma .mima{
+	outline: none;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	text-indent: 5px;
+	background-image: url(../img/tu/mima.png);
+}
+.tishi{
+	height: 25px;
+	width: 350px;
+	/*background-color: #3333FF;*/
+	margin-top: 20px;
+}
+.yanzheng{
+	font-size: 14px;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.yanzheng:hover{
+	color: palevioletred;
+}
+.wangji{
+	font-size: 12px;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-left: 150px;
+}
+.wangji:hover{
+	color: palevioletred;
+}
+.saoma .tijiao{
+	width:293px;
+             background: #f10180;
+            color: white;
+            border: 1px solid #f10180;
+            text-align: center;
+            margin-top: 25px;
+            border-radius: 5px;
+            cursor: pointer;
+			}
+.saoma .tijiao:hover{
+	background-color:#DB7093;
+}
+fieldset{
+	border: none;
+	border-top: 1px solid #B5C0CB;
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+fieldset p{
+	width: 40px;
+	height: 40px;
+	background-color: #B5C0CB;
+	float: left;
+	margin: 0 5px;
+	border-radius: 50%;
+	background-image: url(../img/image/xb.png);
+	background-repeat: no-repeat;
+	background-position-x: -399px;
+	background-position-y: -161px;
+}
+fieldset p:hover{
+	background-color: #38B774;
+}
+.bottom{
+	height: 30px;
+	width: 310px;
+	/*background-color: red;*/
+	float: left;
+}
+.bottom li{
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.bottom0{
+	color: gray;
+	margin-left: -20px;
+}
+.bottom1{
+	color: gray;
+	margin-left: 26px;
+}
+.bottom1:hover{
+	color: palevioletred;
+}
+.bottom2{
+	color: gray;
+	margin-left: 26px;
+}
+.bottom2:hover{
+	color: palevioletred;
+}
+.bottom4{
+	margin-left:38px;
+}
+.bottom4:hover{
+	color: palevioletred;
+}
+.bottom3{
+	color: gray;
+	margin-left: 26px;
+}
+.bottom3:hover{
+	color: darkgray;
+}

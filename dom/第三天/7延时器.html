@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 200px;
+				height: 40px;
+				background-color: yellow;
+			}
+			.top{
+				width: 600px;
+				height: 300px;
+				background-color: red;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" class="box"></div>
+		<div id="top" class="top"></div>
+		<script type="text/javascript">
+			var oBox = document.getElementById("box");
+			var oTop = document.getElementById("top");
+/*			setInterval(function(){
+				alert("hello");
+			},10)*/
+			oBox.onmousemove = function(){
+				oTop.style.display="block";
+			}
+			oBox.onmouseout=function(){
+				setTimeout(function(){
+					oTop.style.display="none";
+				},3000)
+			}
+		</script>
+	</body>
+</html>

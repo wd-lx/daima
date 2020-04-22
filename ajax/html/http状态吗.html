@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1 id="ha">哈哈哈</h1>
+		<input type="button" value="点我" id="btn" />
+		<script type="text/javascript">
+			var ha = document.getElementById("ha");
+			var btn = document.getElementById("btn");
+			btn.onclick = function(){
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = function(){
+					if(xhr.readyState==4){
+						if(xhr.status>=200&&xhr.status<300||xhr.status==304){
+							console.log(JSON.parse(xhr.responseText));
+						}else{
+							console.log("服务器错误");
+						}
+					}
+				}
+				xhr.open("GET","/json/guoji.json",true);
+				xhr.send(null);
+			}
+		</script>
+	</body>
+</html>

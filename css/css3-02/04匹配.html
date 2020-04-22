@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div[aa="hello"]{
+				height: 100px;
+				background-color: red;
+			}
+			[aa^="k"]{
+				height: 50px;
+				background-color: aqua;
+			}
+			[bb$="啊"]{
+				height: 180px;
+				background-color: hotpink;
+				margin: 10px;
+			}
+			[bb~="你"]{
+				height: 80px;
+				background-color: bisque;
+			}
+			[aa|="h"]{
+				height: 100px;
+				background-color: chartreuse;
+			}
+			[aa*="a"]{
+				height: 150px;
+				background-color: chocolate;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			=完全匹配
+			^=开头匹配
+			$=结尾匹配
+			~=空格匹配
+			|=短横匹配
+			*=任意匹配
+		-->
+		<div aa="hello"></div>		
+		<div aa="hello"></div>
+		<div aa="kkhelloav"></div>		
+		<div aa="h-elloas"></div>
+		<div aa="hello"></div>		
+		<div aa="hello"></div>
+		<div bb="你好"></div>		
+		<div bb="你好"></div>
+		<div bb="你-好啊"></div>		
+		<div bb="你 好"></div>
+		<!--<div ></div>		
+		<div ></div>-->
+	</body>
+</html>

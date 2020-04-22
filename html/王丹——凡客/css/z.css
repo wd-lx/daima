@@ -1,0 +1,123 @@
+.zh{
+	border: 1px solid black;
+	width: 1250px;
+	height: 800px;
+}
+.zc{
+	border: 0px solid yellow;
+	width: 1250px;
+	height: 50px;
+
+}
+.zh1{
+	border: 0px solid black;
+	width: 1150px;
+	height: 600px;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-right: 50px;
+}
+.zo{
+	border: 0px solid blue;
+	height: 70px;
+	width: 1150px;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+.zo1{
+	border: 0px solid cyan;
+	height: 50px;
+	width: 285px;
+	float: left;
+	background-color: indianred;
+	line-height: 50px;
+	text-align: center;
+}
+.zo2{
+	border: 0px solid cyan;
+	height: 50px;
+	width: 285px;
+	float: left;
+	background-color: blanchedalmond;
+	line-height: 50px;
+	text-align: center;
+}
+.zo3{
+	border: 0px solid cyan;
+	height: 50px;
+	width: 285px;
+	float: left;
+	background-color: blanchedalmond;
+	line-height: 50px;
+	text-align: center;
+}
+.zo4{
+	border: 0px solid cyan;
+	height: 50px;
+	width: 285px;
+	float: left;
+	background-color: blanchedalmond;
+	line-height: 50px;
+	text-align: center;
+}
+.hu{
+	border: 0px solid blue;
+	width: 1150px;
+	height: 180px;
+}
+.hu1{
+	border: 0px solid red;
+	width: 300px;
+	height: 50px;
+	margin-left: 400px;
+}
+.hu3{
+	border: 0px solid red;
+	width:500px;
+	height: 50px;
+	margin-left: 400px;
+	
+}
+.hu2{
+	float: left;
+}
+.hu4{
+	float: left;
+	margin-left: 5px;
+}
+.hu5{
+	margin-left: 5px;
+}
+.hu6{
+	border: 1px solid black;
+	width: 100px;
+	height: 40px;
+	margin-left: 500px;
+	margin-top: 5px;
+	text-align: center;
+	background-color: darkred;
+	line-height: 40px;
+
+}
+.we{
+	border: 1px solid lightpink;
+	height: 200px;
+	width: 1000px;
+	margin-left: 75px;
+	font-size: 10px;
+	color: darkgrey;
+	
+}
+.eb{
+	border: 0px solid red;
+	height: 20px;
+	width: 1250px;
+	text-align: center;
+	font-size: 2px;
+}
+.cf{
+	border: 0px solid red;
+	width: 1250px;
+	height: 40px;
+	text-align: center;
+}

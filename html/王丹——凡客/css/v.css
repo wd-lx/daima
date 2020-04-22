@@ -1,0 +1,364 @@
+.fanke
+{
+	height: 3000px;
+	width: 1250px;
+	float: left;
+    border: 0px solid black;
+}
+.yi
+{
+	height: 30px;
+	width: 1250px;
+	border: 1px solid black;
+	float: left;
+	background-color: gainsboro;
+}
+.c{
+	height: 20px;
+	width: 500px;
+	border: 0px solid red;
+	float: left;
+	margin-top: 5px;
+	text-align: center;
+	margin-left: 700px;
+}
+.er
+{
+	height:50px ;
+	width:1250px ;
+	border: 1px solid black;
+	float: left;
+}
+.b
+{
+	height: 46px;
+	width: 185px;
+	float: left;
+	border: 0px solid black;
+	background-image:url(../img/新建文件夹/1.jpg);
+}
+.b1
+{
+	height:40px;
+	width: 711px;
+	float: left;
+	border: 0px solid black;
+	margin-top: 10px;
+	margin-left: 350px;
+	color: gainsboro;
+}
+*{
+		padding: 0;
+		margin: 0;
+	}
+ul,a1{
+		font-size: 18px;
+		list-style: none;
+		text-decoration: none;
+		background-color:ghostwhite;
+		color: black;
+		width: 70px;
+		text-align: center;
+		border: 0px solid green;
+		margin-top: 10px;
+	}
+	a1{
+		display: block;
+	}
+	.plat{
+		display: none;
+	}
+	.nav:hover .plat{
+		display: block;
+		clear: both;
+	}
+	.nav{
+		float: left;
+		margin-top: 1px;
+	}
+	.plat li:hover>a1{
+		background-color: wheat;
+	}
+	.table{
+		border:  0px solid red;
+		height: 1250px;
+		width: 1250px;
+	}
+	
+	.table1{
+		font-size: 20px;
+		font-weight: bold;
+		background-color: red;
+		width: 100px;
+		height: 30px;
+		margin-left: 50px;
+		margin-top: 100px;
+	}
+	.table2{
+		border: 0px solid red;
+		height: 200px;
+		width: 1200px;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+.table3{
+	font-size: 20px;
+	font-weight: bold;
+	width: 100px;
+	height: 30px;
+	background-color: red;
+	margin-left: 50px;
+}
+.table4{
+		border: 0px solid red;
+		height: 200px;
+		width: 1200px;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+.table5{
+		font-size: 20px;
+		font-weight: bold;
+		background-color: red;
+		width: 100px;
+		height: 30px;
+		margin-left: 50px;
+		margin-top: 100px;
+	}
+	.table6{
+		border: 0px solid red;
+		height: 200px;
+		width: 1200px;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+.eryi
+{
+	
+	height: 280px;
+	width: 1250px;
+	float: left;
+    border: 0px solid black;
+}
+.w
+{
+	height: 275px;
+	width: 385px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/14.jpg);
+    margin-left: 50px;
+}
+.w1
+{
+	height: 275px;
+	width: 385px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/15.jpg);
+    margin-left: 10px;
+}
+.w2
+{
+	height: 275px;
+	width: 385px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/16g.jpg);
+    margin-left: 10px;
+}
+.erer
+{
+	height: 340px;
+	width: 1250px;
+	float: left;
+    border: 0px solid gainsboro;
+}
+.w3
+{
+	height: 340px;
+	width: 1250px;
+	float: left;
+    border: 0px solid gainsboro;
+    margin-left: px;
+}
+.w4
+{
+	height: 42px;
+	width: 42px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/onlinecustomer.png);
+    margin-left: 175px;
+  
+}
+.w5
+{
+	height: 44px;
+	width: 400px;
+	float: left;
+    border: 0px solid black;
+    margin-top: 50px;
+}
+.w6
+{
+	height: 30px;
+	width: 400px;
+	float: left;
+    border: 0px solid black;
+    margin-top: 50px;
+}
+.w7
+{
+	height: 30px;
+	width: 200px;
+	float: left;
+	border: 0px solid black;
+	background-color: red;
+	margin-left: 100px;
+	line-height: 30px;
+	text-align: center;
+}
+.w8
+{
+	height:280px ;
+	width: 400px;
+	float: left;
+	border: 0px solid gainsboro;
+	margin-left: 50px;
+}
+.w9
+{
+	height:280px ;
+	width: 400px;
+	float: left;
+	border: 0px solid gainsboro;
+}
+.z
+{
+	height: 44px;
+	width: 400px;
+	float: left;
+    border: 0px solid black;
+    margin-top: 50px;
+}
+.z1
+{
+	height: 42px;
+	width: 42px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/seven.png);
+    margin-left: 175px;
+}
+.z2
+{
+	
+	height: 60px;
+	width: 400px;
+	float: left;
+    border: 0px solid black;
+    margin-top: 50px;
+}
+.z3
+{
+	height: 30px;
+	width: 200px;
+	float: left;
+	border: 0px solid black;
+	margin-left: 100px;
+	line-height: 30px;
+	text-align: center;
+}
+.z4
+{
+	height:280px ;
+	width: 380px;
+	float: left;
+	border: 0px solid gainsboro;
+}
+.z5
+{
+	height: 260px;
+	width: 380px;
+	float: left;
+    border: 0px solid black;
+}
+.z6
+{
+	height: 128px;
+	width: 128px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/2014_8_29_16_39_33_7709.jpg);
+    background-size: 100%;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.z7
+{
+	height: 50px;
+	width: 380px;
+	float: left;
+	border: 0px solid black;
+	text-align: center;
+	line-height: 50px;
+}
+.z8
+{
+	height: 50px;
+	width: 1180px;
+	float: left;
+    border: 0px solid gainsboro;
+    background-color: gainsboro;
+    margin-left: 50px;
+    line-height: 50px;
+    color: black;
+}
+.ersan
+{
+	height: 2px;
+	width: 1250px;
+	float: left;
+    border: 0px solid black;
+    background-color: black;
+    margin-top: 20px;
+}
+.ersi
+{
+	height: 50px;
+	width: 1250px;
+	float: left;
+    border: 0px solid black;
+    text-align: center;
+    color: gainsboro;
+}
+.cd1
+{
+	height: 50px;
+	width: 1250px;
+	float: left;
+    border: 0px solid black;
+    margin-top: 30px;
+}
+.cd2
+{
+	height: 41px;
+	width: 378px;
+	float: left;
+    border: 0px solid black;
+    background-image: url(../img/新建文件夹/m.png);
+    margin-top: 5px;
+    margin-left: 450px;
+}
+.m99
+{
+	text-decoration: none;
+}
+.c99
+{
+	text-decoration: none;
+}
+a
+{
+	text-decoration: none;

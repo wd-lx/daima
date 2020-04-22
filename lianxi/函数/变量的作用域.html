@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*	var a="这里是全局变量";  //该变量在函数外声明，使用与整个脚本
+			function send(){
+				var b ="这里是局部变量";     //改变量在函数内部声明，作用于整个函数
+				document.write(a+"<br>");
+				document.write(b);
+			}
+			send();*/
+			
+			
+			//变量的优先级  
+			/*var a="这里是全局变量";
+			function send(){
+				var a="这里是局部变量";
+				alert(a);
+			}*/
+			//嵌套函数的作用范围
+			function outfun(){
+				var a="这里是局部变量";
+				function infun(){
+					var b="这里是嵌套函数中的变量";
+					alert(a);
+					alert(b);
+				}
+				infun();
+			}
+			outfun();
+		</script>
+	</body>
+</html>

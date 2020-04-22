@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+        //三位数  各个位数的阶乘之和等于本身
+        function jiecheng(a){
+        	var s = 1;
+        	for(var i=1;i<=a;i++){
+        		s*=i;
+        	}
+        	return s;
+        }
+        for(var i=100;i<=999;i++){
+        	var a = parseInt(i%10);
+        	var b = parseInt(i/10)%10;
+        	var c = parseInt(i/100);
+        	if(jiecheng(a)+jiecheng(b)+jiecheng(c)==i){
+        		console.log(i);
+        	}
+        }
+		</script>
+	</body>
+</html>

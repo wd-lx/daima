@@ -1,0 +1,181 @@
+.bc
+{
+	height:950px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+}
+.bc1
+{
+	height:50px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+	text-align: right;
+	line-height: 50px;
+	font-size: 5px;
+
+}
+.bc2
+{
+	height:46px ;
+	width: 185px;
+	border: 0px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/1.jpg);
+}
+.bc3
+{
+	
+	height:0px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+	background-color: black;
+	margin-top: 3px;
+}
+.bc4
+{
+	height:700px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+}
+.bc5
+{
+	height:700px ;
+	width: 750px;
+	border: 0px solid black;
+	float: left;
+}
+.bc6
+{
+	height:352px ;
+	width: 465px;
+	border: 0px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/login120412_newlogo.jpg);
+	margin-left: 140px;
+	margin-top:175px ;
+}
+.bc8
+{
+	height:100px ;
+	width: 495px;
+	border: 0px solid black;
+	float: left;
+	line-height: 100px;
+   font-weight: bold;
+   
+}
+
+.bo{
+	height:700px ;
+	width: 1250px;
+	border: 0px solid yellow;
+	float: left;
+	margin-top: -620px;
+	margin-left: 20px;
+	
+}
+
+.lo{
+	height:50px ;
+	width:450px;
+	border: 1px solid black;
+	float: left;
+	margin-left:750px;
+	margin-top: 30px;
+}
+.lo1{
+	height:50px ;
+	width:245px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	background-color: darkred;
+}
+.lo2{
+	height:50px ;
+	width: 201px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+    line-height: 50px;
+    background-color: gainsboro;
+}
+.lo3
+{
+	height:60px ;
+	width: 450px;
+	border: 1px solid black;
+	float: left;
+    margin-top: 40px;
+    margin-left:750px;
+}
+.lo4{	
+	height:40px ;
+	width: 1200px;
+	border: 0px solid black;
+	float: left;
+    margin-top: 20px;
+    text-align: right;
+    font-weight:100px ;
+}
+.lo5{
+	height:60px ;
+	width: 450px;
+	border: 1px solid black;
+	float: left;
+    margin-top: 20px;
+    margin-left:750px;
+    background-color: darkred;
+}
+.jo1{
+	text-align: center;
+	margin-top: 10px;
+}
+.ed{
+	border: 1px dashed black;
+	width: 450px;
+	height:150px;
+	margin-top: 450px;
+	margin-left: 750px;
+
+}
+.ed1{
+	height:50px ;
+	width: 495px;
+	float: left;
+	margin-top:30px;
+	color:grey;
+	text-align: left;
+}
+.ed2{
+	border:0px solid red;
+	width: 495px;
+	height: 50px;
+	margin-top:60px;
+}
+.eb2{
+	margin-top: 60px;
+}
+.eb{
+	border: 0px solid red;
+	height: 20px;
+	width: 1250px;
+	text-align: center;
+	font-size: 2px;
+}
+.cf{
+	border: 0px solid red;
+	width: 1250px;
+	height: 40px;
+	text-align: center;
+}
+a{ text-decoration: none;}
+
+
+

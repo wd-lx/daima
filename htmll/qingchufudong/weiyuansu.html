@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				height: 200px;
+				width: 200px;
+				background-color: red;
+			}
+			.box1{
+				height: 200px;
+				width: 150px;
+				background-color: #008000;
+				float: left;
+			}
+			.box2{
+				height: 150px;
+				width: 150px;
+				background-color: lawngreen;
+				float: left;
+			}
+			.box3{
+				height: 100px;
+				width: 150px;
+				background-color:palevioletred;
+				float: left;
+			}
+			.box4{
+				height: 50px;
+				width: 150px;
+				background-color:blue;
+				float: left;
+			}
+			.box::after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</body>
+</html>

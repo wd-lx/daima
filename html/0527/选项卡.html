@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		  *{
+		  	margin: 0;
+		  	padding: 0;
+		  }
+		  .box{
+		  	width: 600px;
+		  	height: 600px;
+		  	/*background-color: salmon;*/
+		  	margin: 30px auto;
+		  	border: 1px solid silver;	    	
+		  }
+		  .top{
+		  	/*background-color: red;*/
+		  	overflow: hidden;
+		  }
+		  .top .title{
+		  	height: 50px;
+		  	width: 30%;
+		  	margin: 1.4%;
+		  	/*background-color: seagreen;*/
+		  	text-align: center;
+		  	line-height: 50px;
+		  	font-size: 20px;
+		  	float: left;
+		  	border: 1px solid lightgray;
+		  }
+		  .top .title a{
+		  	text-decoration: none;
+		  	color: black;
+		  }
+		  .top .title a:hover{
+		  	color: red;
+		  }
+		  .content{
+		  	width: 600px;
+		  	height: 300px;
+		  	/*background-color: skyblue;*/
+		  	margin-top: 10px;		    
+		  }
+		  .content .content1{
+		  	width: 600px;
+		  	height: 500px;
+		  	background-color: aquamarine;
+		  	margin: 3px;
+		  	display: none;		   	
+		  }
+		  .content1:first-child{
+		  	display: block;
+		  }	
+		  .content1 img{
+		  	width: 600px;
+		  	height:500px;		  	
+		  }
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<div class="title"><a href="#">卡哇伊27+17</a></div>
+				<div class="title"><a href="#">猛龙获东部冠军</a></div>
+				<div class="title"><a href="#">队史首次进总决赛</a></div>	
+			</div>
+			<div class="content">
+				<div class="content1"><img src="img/1.jpeg"/></div>
+				<div class="content1"><img src="img/2.jpeg"/></div>
+				<div class="content1"><img src="img/3.jpeg"/></div>			                  
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var titles = document.querySelectorAll(".title");
+		var contents = document.querySelectorAll(".content .content1");
+		
+		for (var i=0;i<titles.length;i++){
+			(function(i){
+			titles[i].onclick = function(){
+				for(var j=0;j<contents.length;j++){
+					contents[j].style.display = "none";
+				}
+			  contents[i].style.display = "block";			  
+			}
+			})(i)
+
+		}
+//		titles[0].onclick = function(){
+//			contents[0].style.display = "block";
+//			contents[1].style.display = "none";
+//			contents[2].style.display = "none";
+//		}		
+//		titles[1].onclick = function(){
+//			contents[0].style.display = "none";
+//			contents[1].style.display = "block";
+//			contents[2].style.display = "none";
+//		}	
+//		titles[2].onclick = function(){
+//			contents[0].style.display = "none";
+//			contents[1].style.display = "none";
+//			contents[2].style.display = "block";
+//		}
+
+	</script>
+</html>

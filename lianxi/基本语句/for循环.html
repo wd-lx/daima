@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//计算100以内所有奇数的和
+			/*var sum = 0;
+			for(i=1;i<=100;i+=2){
+				sum = sum+i;
+			}
+			alert(sum);
+*/			//输入1-100
+			/*for (i=1;i<=100;i++) {
+				document.write(i+"<br>");
+			}*/
+			
+			
+			
+			//循环嵌套    注意事项   1、外层为假时，内层不循环   2、先执行外层在执行内层，直至内层条件为假时，再返回内层去执行
+			/*for (var i=1;i<=3;i++) {
+				document.write(i+"<br>");
+				for (var j =1;j<=5;j++) {
+					document.write(j+"<br>");
+				}
+			}*/
+			//乘法口诀表
+			document.write("<table border='1'>");
+			for (var i =1;i<10;i++) {
+				document.write("<tr>");
+				for (var j=1;j<=i;j++) {
+					document.write("<td>");
+					document.write(j+"x"+i+"="+j*i);
+					document.write("</td>");
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>

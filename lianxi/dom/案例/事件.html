@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				height: 200px;
+				width: 200px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div id="box"></div>
+		<script type="text/javascript">
+			//onclick 点击事件
+			var oBox = document.getElementById("box");
+			oBox.onclick = function(){
+				alert("别点我");
+			}
+			//onmousemove 鼠标移入事件
+			oBox.onmousemove = function(){
+				oBox.style.backgroundColor = "red";
+			}
+			oBox.onmouseout= function(){
+				this.style.backgroundColor = "yellowgreen";
+			}
+		</script>
+-->
+            <input type="text" id="sr" />
+            <script type="text/javascript">
+            	var oInput = document.getElementById("sr");
+            	sr.onblur = function(){
+            		var val = this.value;
+            		if(val ==""||val==undefined||val==null){
+            			alert("输入框不能为空");
+            		}else{
+            			alert("输入正确");
+            		}
+            	}
+            </script>
+	</body>
+</html>

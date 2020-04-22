@@ -1,0 +1,361 @@
+.mo
+{
+	height:1400px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+}
+.mo1
+{
+	height: 30px;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+	background-color:gainsboro;
+}
+.mo2
+{
+	height: 20px;
+	width: 500px;
+	border: 0px solid black;
+	float: left;
+	margin-top: 5px;
+	text-align: right;
+	margin-left:700px ;
+	color: gray;
+}
+.mo3
+{
+    height:54px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;	
+}
+.mo4
+{
+	 height:25px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+}
+.mo5
+{
+	height:20px ;
+	width: 200px;
+	border: 1px solid black;
+	float: left;
+	margin-left: 850px;
+}
+.mo6
+{
+	height:20px ;
+	width: 50px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 1px;
+	text-align: center;
+	line-height: 20px;
+	background-color: brown;
+	color: white;
+}
+.mo7
+{
+	height:20px ;
+	width: 100px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 1px;
+	text-align: center;
+	line-height: 20px;
+	background-color: brown;
+	color: white;
+	margin-left: 20px;
+}
+.mo8
+{
+	height:25px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+}
+.mo9
+{
+	height:20px ;
+	width: 400px;
+	border:0px solid black;
+	float: left;
+	margin-top: 1px;
+	color: gray;
+	margin-left: 850px;
+	text-align: left;
+    line-height: 20px;
+    font-size: 12px;
+}
+.ing
+{
+	height:50px ;
+	width: 1250px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+}
+.ing1
+{
+	height:46px ;
+	width: 185px;
+	border: 1px solid black;
+	float: left;
+	margin-left: 50px;
+}
+.er
+{
+	height:100px ;
+	width:1250px ;
+	border:0px solid black;
+	float: left;
+}
+.b
+{
+	height: 46px;
+	width: 185px;
+	float: left;
+	border: 0px solid black;
+	background-image:url(../img/新建文件夹/1.jpg);
+}
+.b1
+{
+	height:40px;
+	width: 711px;
+	float: left;
+	border: 0px solid black;
+	margin-top: 10px;
+	margin-left: 350px;
+	color: gainsboro;
+}
+*{
+		padding: 0;
+		margin: 0;
+	}
+ul,a1{
+		font-size: 18px;
+		list-style: none;
+		text-decoration: none;
+		background-color:ghostwhite;
+		color: black;
+		width: 70px;
+		text-align: center;
+		border: 0px solid green;
+		margin-top: 10px;
+	}
+	a1{
+		display: block;
+	}
+	.plat{
+		display: none;
+	}
+	.nav:hover .plat{
+		display: block;
+		clear: both;
+	}
+	.nav{
+		float: left;
+		margin-top: 1px;
+	}
+	.plat li:hover>a1{
+		background-color: wheat;
+	}
+.ing3
+{
+	height:610px ;
+	width: 1250px;
+	border: 0px solid black;
+	float: left;
+	margin-top: 100px;
+}
+.ing4
+{
+	height:550px ;
+	width: 776px;
+	border: 0px solid black;
+	float: left;
+	background-image: url(../img/新建文件夹/34.jpg);
+	margin-left:235px;
+}
+.ing5
+{
+	height:340px ;
+	width: 1250px;
+	border: 0px solid gray;
+	float: left;
+}
+.ing6
+{
+	height:340px ;
+	width: 1100px;
+	border: 0px solid gray;
+	float: left;
+	margin-left: 65px;
+}
+.ing7
+{
+	height:280px ;
+	width: 1100px;
+	border: 0px solid gray;
+	float: left;
+}
+.ing8
+{
+	height:40px ;
+	width: 1100px;
+	border: 0px solid gray;
+	float: left;
+	line-height: 40px;
+	color: gray;
+}
+.ing9
+{
+	height:280px ;
+	width: 300px;
+	border: 0px solid gray;
+	float: left;
+	margin-left: 50px;
+}
+.pu
+{
+	height:42px ;
+	width: 42px;
+	border: 0px solid gray;
+	float: left;
+	background-image: url(../img/新建文件夹/onlinecustomer.png);
+	margin-left:119px ;
+}
+.pu1
+{
+	height:42px ;
+	width: 300px;
+	border: 0px solid gray;
+	float: left;
+	margin-top: 120px;
+}
+.pu2
+{
+	height:30px ;
+	width: 300px;
+	border: 0px solid gray;
+	float: left;
+	margin-top: 40px;
+}
+.pu3
+{
+	
+	height:30px ;
+	width: 150px;
+	border: 0px solid gray;
+	float: left;
+	margin-left: 70px;
+	background-color: brown;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+.pu4
+{
+	height:280px ;
+	width: 300px;
+	border: 0px solid gray;
+	float: left;
+	margin-left: 30px;
+}
+.pu6
+{
+	height:42px ;
+	width: 300px;
+	border: 1px solid gray;
+	float: left;
+	margin-top: 120px;
+}
+.pu7
+{
+	height:38px ;
+	width: 38px;
+	border: 0px solid gray;
+	float: left;
+	background-image: url(../img/新建文件夹/seven.png);
+	margin-left:119px ;
+	margin-top: 1px;
+}
+.pu8
+{
+	height:60px ;
+	width: 300px;
+	border: 0px solid gray;
+	float: left;
+	margin-top: 40px;
+	text-align: center;
+	color: gray;
+}
+.pu9
+{
+	height:280px ;
+	width: 300px;
+	border: 0px solid gray;
+	float: left;
+	margin-left: 30px;
+}
+.tr
+{
+	height:100px ;
+	width: 100px;
+	border: 0px solid gray;
+	float: left;
+	background-image: url(../img/新建文件夹/2014_8_29_16_39_33_7709.jpg);
+	background-size: 100%;
+	margin-left: 100px;
+	margin-top: 118px;
+}
+.tr1
+{
+	height:30px ;
+	width: 150px;
+	border: 0px solid gray;
+	float: left;
+	margin-left: 75px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.uv
+{
+	height:50px ;
+	width: 1250px;
+	border: 0px solid gray;
+	float: left;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 30px;
+	color: gray;
+	font-size: 12px;
+}
+.uv1
+{
+	height:2px ;
+	width: 1250px;
+	border: 0px solid gray;
+	float: left;
+	margin-top: 20px;
+	background-color: gray;
+}
+.uv2
+{
+	height:60px ;
+	width: 400px;
+	border: 0px solid gray;
+	float: left;
+	background-size: 100%;
+	background-image: url(../img/新建文件夹/m.png);
+	margin-left: 450px;
+}
+a{
+	text-decoration: none;
+}

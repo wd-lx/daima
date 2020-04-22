@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//在函数内部在定义一个函数
+			/*function a(){      //定义一个外部函数
+				function b(x,y){         //定义以内部函数
+					alert(x+y);
+				}
+				b(1,2);            //调用内部函数
+			}
+			a();       */          //调用外部函数
+			
+			
+			
+			
+		//在一个函数的函数体重对另一个函数进行调用
+		//比如在函数b（）中对函数a（）进行调用
+		function a(){
+			alert("李泽是狗");
+		}
+		function b(){
+			a();
+		}
+		b();
+		</script>
+	</body>
+</html>

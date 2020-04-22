@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			 *{margin:0;padding:0;}
+        .side-nav{
+            width:50px;
+            position:fixed;
+            left:0;
+            top:20%;
+            background:chocolate;
+        }
+        .side-nav span{
+            display:block;
+            width:50px;
+            height:50px;
+            text-align: center;
+            line-height: 50px;
+            color:#FFF;
+            cursor: pointer;
+        }
+        /*.side-nav .active{
+            border:2px solid #FFF;
+        }*/
+        .floor{
+            width：100%;
+            height:400px;
+            margin-bottom: 20px;
+            background: pink;
+        }
+        .footer{
+            width:100%;
+            height:300px;
+            background: pink;
+        }
+		</style>
+	</head>
+
+	<body>
+		  <div class="side-nav">
+    <span class="active">1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+</div>
+
+<div class="floor floor-01"></div>
+<div class="floor floor-02"></div>
+<div class="floor floor-03"></div>
+<div class="floor floor-04"></div>
+<div class="floor floor-05"></div>
+<div class="floor floor-06"></div>
+<div class="floor floor-07"></div>
+<div class="footer"></div>
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+<script type="text/javascript">
+	 $(function(){
+            //给一个颜色数组
+            var colorArr = ['red','orange','yellow','green','blue','cyan','purple'];
+            //便利给各个导航“span”元素，和各个对应的楼层栏目元素
+            for(i=0;i<$('.side-nav span').length;i++){
+                $('.side-nav span').eq(i).css({background:colorArr[i]});
+                $('.floor').eq(i).css({background:colorArr[i]});
+            }
+            
+            //安利一下知识点
+            //arr.push()
+            //push() 方法可把它的参数顺序添加到 arrayObject 的尾部。它直接修改 arrayObject，而不是创建一个新的数组。
+            //offset()
+            //JQ中获取匹配元素在当前视口的相对偏移。返回的对象包含两个整型属性：top 和 left。此方法只对可见元素有效。
+    
+            //获取各个楼层的距离浏览器上部偏移量,并放入数组
+            var divTopArr = [];
+            for(var i=0;i<$('.floor').length;i++){
+                divTopArr.push($('.floor').eq(i).offset().top);
+            }
+              //给导航每个栏目按钮添加点击事件，点击导航上的每个栏目按钮，html(body)元素滑动到对应的栏目
+            $('.side-nav span').click(function(){
+                $('body,html').animate({scrollTop:divTopArr[$(this).index()]+'px'});
+                $('.side-nav span').removeClass('active');
+                $(this).addClass('active');
+            })
+            
+            
+            //添加页面滚轮滚动事件，
+            $(window).scroll(function(){
+                //获取获取页面当前已经滚动的scrollTop值 
+                var scrollTop = $(window).scrollTop();
+                //divTopArr 遍历每一个楼层或者每个楼层对应的按钮
+                for(i=0;i<$('.side-nav span').length;i++){
+                    //判断当前页面已经滚动的top值是否大于最后一个楼层top偏移量（最后一个要拿出来单算）
+                    if(scrollTop < divTopArr[divTopArr.length-1]){
+    //          给一个循环动态判断的条件，若当前scrollTop值大于数组的arr[i],且小于arr[i+1],就对应的栏目按钮添加样式
+                        if(scrollTop >= divTopArr[i] && scrollTop < divTopArr[i+1]){
+                            $('.side-nav span').removeClass('active');
+                            $('.side-nav span').eq(i).addClass('active');
+                        }
+                    }else{
+                    //若当前scrollTop值大于数组的arr[length-1](即数组的最后一个值，最后一个栏目的offsetTop),
+                        $('.side-nav span').removeClass('active');
+                        $('.side-nav span').eq(divTopArr.length-1).addClass('active');
+                    }
+                }
+    
+            })
+            
+        })
+
+</script>
+	</body>
+
+</html>

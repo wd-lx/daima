@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			// 父类     
+			function Person(name, age, sex) {
+			this.name = name;
+			this.age = age;
+			this.sex = sex;
+			}
+			// 子类
+			function Student(name, age, sex, score) {
+				Person.call(this, name, age, sex);  // 此时父类的 this 指向子类的 this，同时调用这个函数       this.score = score;
+			}
+			var s1 = new Student('zs', 18, '男', 100);
+			console.dir(s1);
+			alert(s1);
+		</script>
+	</body>
+
+</html>
