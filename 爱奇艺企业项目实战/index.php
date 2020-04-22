@@ -6,7 +6,7 @@
 	<!--当前页面的三要素-->
   <meta name="Keywords" content="关键字">
   <meta name="Description" content="描述">
-  <title>标题</title>
+  <title>爱奇艺</title>
   <!--css 样式，外形-->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <!--[if lte IE 6]> <link rel="stylesheet" href="css/IE6style.css" type="text/css" /> <![endif]--> 
