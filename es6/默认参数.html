@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>默认参数</title>
+</head>
+
+<body>
+    <script>
+        function fun(name) {
+            name = name || "王二小";
+            console.log(name);
+        }
+        fun();
+        fun("放牛娃");
+        //默认参数
+        function fun1(name = "小魔仙") {
+            console.log(name);
+        }
+        fun1();
+        fun1("王丹");
+        //剩余参数
+        function fun2(a, ...reset) {
+            console.log(a);
+            console.log(reset);
+        }
+        fun2(11);
+        fun2(110, 112, 114, 888);
+        var arr = ["王丹", "吕小婷", "李云雁", "晓晓姐"];
+
+        function fun3(a, b, c, d) {
+            console.log(a, b, c, d);
+        }
+        fun3(arr[0], arr[1], arr[2], arr[3]);
+        fun3.apply(null, arr);
+        fun3.call(null, arr[0], arr[1], arr[2], arr[3]);
+        fun3(...arr); //参数的映射
+    </script>
+</body>
+
+</html>
