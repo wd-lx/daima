@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue/javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <div v-red>{{name}}</div>
+    </div>
+    <script>
+        Vue.directive('red', function(el) {
+            el.onmousedown = function(e) {
+                el.onmousemove = function(e) {
+
+                }
+                document.onmouseup = function(e) {
+
+                }
+            }
+        })
+        let vm = new Vue({
+            el: '#box',
+            data: {
+                name: 'wangdan',
+            }
+        })
+    </script>
+</body>
+
+</html>
