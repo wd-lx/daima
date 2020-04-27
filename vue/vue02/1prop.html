@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue/javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <hello name="王丹" hobby="拍照" obj="{aa:aaaaa}"></hello>
+    </div>
+    <template id="content">
+        <div>
+            <h1>{{name}}</h1>
+            <h2>{{hobby}}</h2>
+            <h3>{{obj}}</h3>
+        </div>
+    </template>
+    <script>
+        Vue.conmponet('hello', {
+            props: ["name", "hobby", "obj"],
+            template: "#content",
+        })
+        new Vue({
+            el: "#box",
+        })
+    </script>
+</body>
+
+</html>
