@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import page from '@/components/page'
 import work from '@/components/work'
 import first from '@/components/first'
+import dtalist from '@/components/datalist'
+import sort from '@/components/sort'
 const User = {
     template: `<div>
   <h3><font color="green">我是父组件 {{$route.params.id}} </font></h3>
@@ -40,6 +42,11 @@ export default new Router({
             component: work
         },
         {
+            path: '/sort',
+            name: "sort",
+            component: sort
+        },
+        {
             path: '/first/:id',
             name: "first",
             component: first
@@ -60,6 +67,11 @@ export default new Router({
                 }
             ]
         },
+        {
+            path: '/datalist',
+            name: '/datalist',
+            component: dtalist
+        }
         // 路由的重定向：表示将你原来在转发列表中发向路由的路径改成另一条路由的路径，
         // 你的数据会存到另一路由的服务器上
         // {
