@@ -25,6 +25,7 @@
         },
         mounted() {
             this.dataAll();
+            // this.getName();
         },
         methods: {
             dataAll() {
@@ -36,7 +37,7 @@
             },
             getName(aa) {
                 console.log(aa);
-                 let self=this;
+                //  let self=this;
                 if (aa != '' || aa != null || aa != undefined) {
                     this.$axios.get("/api/w/website/findGoodsList", {
                         params: {
@@ -45,10 +46,9 @@
                             platId: 'd0a500ecf8ab41aa9ffe8e18ac6419e1'
                         }
                     }).then(res => {
-                       
                         // console.log(res);
-                        self.sortDateList = res.data.data.tbk_dg_material_optional_response.result_list.map_data;
-                        console.log(self.sortDateList)
+                        this.sortDateList = res.data.data.tbk_dg_material_optional_response.result_list.map_data;
+                        console.log(this.sortDateList);
                     })
                 }
             }

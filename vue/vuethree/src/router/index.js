@@ -6,6 +6,7 @@ import work from '@/components/work'
 import first from '@/components/first'
 import dtalist from '@/components/datalist'
 import sort from '@/components/sort'
+import count from '@/components/count'
 const User = {
     template: `<div>
   <h3><font color="green">我是父组件 {{$route.params.id}} </font></h3>
@@ -40,6 +41,11 @@ export default new Router({
             path: '/work',
             name: "work",
             component: work
+        },
+        {
+            path: '/count',
+            name: "count",
+            component: count
         },
         {
             path: '/sort',
